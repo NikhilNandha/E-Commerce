@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MULI-BOLD.TTF">
+            <string>Muli-Bold</string>
+        </array>
+        <array key="MULI-REGULAR.TTF">
+            <string>Muli-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ScrollContentView" customModule="Moyohak" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="755"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be Careful" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGJ-9d-cvZ">
+                    <rect key="frame" x="140" y="474" width="134" height="34"/>
+                    <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="27"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Easy and smart way to manage your wallet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqw-qy-fmI">
+                    <rect key="frame" x="100" y="520.5" width="214" height="43"/>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="17"/>
+                    <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rqw-qy-fmI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="100" id="5E2-yl-KUx"/>
+                <constraint firstItem="UGJ-9d-cvZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.3" id="WHy-cY-7G6"/>
+                <constraint firstItem="rqw-qy-fmI" firstAttribute="top" secondItem="UGJ-9d-cvZ" secondAttribute="bottom" constant="12.5" id="crm-sf-Yjy"/>
+                <constraint firstItem="UGJ-9d-cvZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hUG-VX-Jwu"/>
+                <constraint firstItem="rqw-qy-fmI" firstAttribute="centerX" secondItem="UGJ-9d-cvZ" secondAttribute="centerX" id="oTP-kW-mMl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rqw-qy-fmI" secondAttribute="trailing" constant="100" id="ryd-c2-IgK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="labelDetail" destination="rqw-qy-fmI" id="DYH-Ka-Nab"/>
+                <outlet property="labelTitle" destination="UGJ-9d-cvZ" id="ElB-kW-6U7"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="86.71875"/>
+        </view>
+    </objects>
+</document>
