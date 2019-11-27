@@ -1,22 +1,19 @@
 //
-//  LoginViewController.swift
-//  MoyohakPartner
+//  RegistrationViewController.swift
+//  Moyohak
 //
-//  Created by Nikhil Nandha on 10/11/19.
+//  Created by Nikhil Nandha on 27/11/19.
 //  Copyright © 2019 Nikhil Nandha. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: SuperViewController {
-
+class RegistrationViewController: UIViewController {
+    
     @IBOutlet var textfieldMobile: UITextField!
     @IBOutlet var textfieldPassword: UITextField!
     @IBOutlet var viewEmail: UIView!
     @IBOutlet var viewPassword: UIView!
-    @IBOutlet var registerButton: UIButton!
-    @IBOutlet var submitButton: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +22,7 @@ class LoginViewController: SuperViewController {
         plotScreen()
     }
     
+
     private func plotScreen() {
         viewEmail.layer.cornerRadius = 8.0
         viewPassword.layer.cornerRadius = 8.0
@@ -35,14 +33,13 @@ class LoginViewController: SuperViewController {
     // MARK: - Button Tapped Events -
     
     @IBAction func registerButtonTapped(sender: UIButton) {
-        RegistrationViewModel.showRegistrationScreen(navigationType: .Push, parentViewController: self)
+        
     }
     
     @IBAction func loginButtonTapped(sender: UIButton) {
-        
+        if ViewNavigator.shared.parentViewController.isKind(of: LoginViewController.self) {
+            ViewNavigator.shared.navigateBack()
+        }
     }
     
-    @IBAction func forgotPasswordButtonTapped(sender: UIButton) {
-        
-    }
 }

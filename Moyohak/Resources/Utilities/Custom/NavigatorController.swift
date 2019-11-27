@@ -20,4 +20,7 @@ struct NavigatorController {
     let Login = Storyboard().main.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
     let LoginNC = Storyboard().main.instantiateViewController(withIdentifier: "LoginViewController_NC") as! UINavigationController
     
+    let Registration = Storyboard().main.instantiateViewController(withIdentifier: "RegistrationViewController") as! RegistrationViewController
+    let RegistrationNC = Storyboard().main.instantiateViewController(withIdentifier: "RegistrationViewController_NC") as! UINavigationController
+    
 }

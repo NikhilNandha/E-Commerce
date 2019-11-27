@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IntroViewController: UIViewController {
+class IntroViewController: UIViewController, PaginControl {
     
     @IBOutlet var buttonNext: UIButton!
     @IBOutlet var buttonPrev: UIButton!
@@ -21,6 +21,8 @@ class IntroViewController: UIViewController {
                     ["title" : "Be Careful", "detail" : "Easy and smart way to manage your wallet"],
                     ["title" : "Be Careful", "detail" : "Easy and smart way to manage your wallet"]]
     
+    internal var currentIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,14 +32,14 @@ class IntroViewController: UIViewController {
     
     private func plotScreen() {
         
-        buttonSkip.isHidden = true
         addContentViewsInScrollViews()
         initializePageControl()
+        setButtons()
     }
     
     private func initializePageControl() {
         pageControl.scp_style = .SCNormal
-        pageControl.set_view(3, current: 0, current_color: UIColor.ThemeColorPrimary)
+        pageControl.set_view(contents.count, current: currentIndex, current_color: UIColor.ThemeColorPrimary)
     }
     
     private func addContentViewsInScrollViews() {
@@ -49,6 +51,21 @@ class IntroViewController: UIViewController {
             contentView.frame = CGRect.init(x: scrollV.frame.size.width * CGFloat(index), y: 0, width: scrollV.frame.size.width, height: scrollV.frame.size.height)
             scrollV.addSubview(contentView)
         }
+        
+        scrollV.contentSize = CGSize(width: scrollV.frame.size.width * CGFloat(contents.count), height: scrollV.frame.size.height)
+    }
+    
+    private func setButtons() {
+        switch currentIndex {
+        case 0:
+            buttonSkip.isHidden = false
+            buttonPrev.isHidden = true
+            break
+        default:
+            buttonSkip.isHidden = true
+            buttonPrev.isHidden = false
+            break
+        }
     }
     
     // MARK: - Button Tapped Events -
@@ -58,13 +75,25 @@ class IntroViewController: UIViewController {
     }
     
     @IBAction func nextTapped(sender: UIButton) {
-        
+        if currentIndex < contents.count-1 {
+            nextPage()
+        }else {
+            LoginViewModel.showLoginScreen(navigationType: .Push, parentViewController: self)
+        }
     }
     
     @IBAction func prevTapped(sender: UIButton) {
-        
+        previousPage()
     }
 
+    
+    func nextPage() {
+        scrollV.setContentOffset(CGPoint.init(x: scrollV.frame.size.width * CGFloat(currentIndex+1), y: 0.0), animated: true)
+    }
+    
+    func previousPage() {
+        scrollV.setContentOffset(CGPoint.init(x: scrollV.frame.size.width * CGFloat(currentIndex-1), y: 0.0), animated: true)
+    }
 }
 
 extension IntroViewController : UIScrollViewDelegate {
@@ -73,6 +102,8 @@ extension IntroViewController : UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
+        currentIndex = Int(scrollView.contentOffset.x) / Int(scrollView.frame.size.width)
+        setButtons()
         pageControl.scroll_did(scrollView)
     }
     

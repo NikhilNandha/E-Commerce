@@ -15,7 +15,7 @@ class LoginViewModel {
         
         ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().Login : NavigatorController().LoginNC,
                                parentViewController: parentViewController,
-                               navigationType: .Push)
+                               navigationType: navigationType)
     }
     
     

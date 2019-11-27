@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03276545238E811E007ECAB8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03276544238E811E007ECAB8 /* RegistrationViewController.swift */; };
+		03276547238E814E007ECAB8 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03276546238E814E007ECAB8 /* RegistrationViewModel.swift */; };
 		0349CEF5238801BF0019860A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0349CEF4238801BF0019860A /* AppDelegate.swift */; };
 		0349CEFC238801BF0019860A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0349CEFA238801BF0019860A /* Main.storyboard */; };
 		0349CEFE238801C80019860A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0349CEFD238801C80019860A /* Assets.xcassets */; };
@@ -64,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03276544238E811E007ECAB8 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		03276546238E814E007ECAB8 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		0349CEF1238801BF0019860A /* Moyohak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moyohak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0349CEF4238801BF0019860A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0349CEFB238801BF0019860A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 		0349CF26238CE3C40019860A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				03276546238E814E007ECAB8 /* RegistrationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				03AEBF71238D908D001CE765 /* IntroViewController.swift */,
+				03276544238E811E007ECAB8 /* RegistrationViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -476,6 +482,7 @@
 				0349CF61238CE3C40019860A /* AppConstants.swift in Sources */,
 				0349CF59238CE3C40019860A /* LoginViewModel.swift in Sources */,
 				03C94B2F238DA8FE00EDC851 /* ScrollContentView.swift in Sources */,
+				03276547238E814E007ECAB8 /* RegistrationViewModel.swift in Sources */,
 				0349CF5E238CE3C40019860A /* CustomTextfield.swift in Sources */,
 				0349CEF5238801BF0019860A /* AppDelegate.swift in Sources */,
 				0349CF62238CE3C40019860A /* ViewNavigator.swift in Sources */,
@@ -485,6 +492,7 @@
 				0349CF7A238D79E80019860A /* SCP_SCJAFlatBar.swift in Sources */,
 				0349CF60238CE3C40019860A /* PagingControl.swift in Sources */,
 				0349CF5B238CE3C40019860A /* LoginViewController.swift in Sources */,
+				03276545238E811E007ECAB8 /* RegistrationViewController.swift in Sources */,
 				0349CF5F238CE3C40019860A /* NavigatorController.swift in Sources */,
 				0349CF7D238D79E80019860A /* SCPageControlView.swift in Sources */,
 				0349CF5C238CE3C40019860A /* SuperViewController.swift in Sources */,
