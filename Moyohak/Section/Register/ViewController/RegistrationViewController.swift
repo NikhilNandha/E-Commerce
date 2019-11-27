@@ -33,7 +33,7 @@ class RegistrationViewController: UIViewController {
     // MARK: - Button Tapped Events -
     
     @IBAction func registerButtonTapped(sender: UIButton) {
-        
+        RegistrationViewModel.showOTPScreen(navigationType: .Push, parentViewController: self)
     }
     
     @IBAction func loginButtonTapped(sender: UIButton) {

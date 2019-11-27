@@ -17,6 +17,12 @@ class LoginViewModel {
                                parentViewController: parentViewController,
                                navigationType: navigationType)
     }
-    
+        
+    public static func showForgotPasswordScreen(navigationType: NavigationType, parentViewController: UIViewController){
+        
+        ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().ForgotPassword : NavigatorController().ForgotPasswordNC,
+                               parentViewController: parentViewController,
+                               navigationType: navigationType)
+    }
     
 }

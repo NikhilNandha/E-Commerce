@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		03276545238E811E007ECAB8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03276544238E811E007ECAB8 /* RegistrationViewController.swift */; };
 		03276547238E814E007ECAB8 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03276546238E814E007ECAB8 /* RegistrationViewModel.swift */; };
+		03276549238EC56C007ECAB8 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03276548238EC56C007ECAB8 /* OTPViewController.swift */; };
+		0327654B238ED5E4007ECAB8 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0327654A238ED5E4007ECAB8 /* ForgotPasswordViewController.swift */; };
 		0349CEF5238801BF0019860A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0349CEF4238801BF0019860A /* AppDelegate.swift */; };
 		0349CEFC238801BF0019860A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0349CEFA238801BF0019860A /* Main.storyboard */; };
 		0349CEFE238801C80019860A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0349CEFD238801C80019860A /* Assets.xcassets */; };
@@ -68,6 +70,8 @@
 /* Begin PBXFileReference section */
 		03276544238E811E007ECAB8 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		03276546238E814E007ECAB8 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		03276548238EC56C007ECAB8 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		0327654A238ED5E4007ECAB8 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		0349CEF1238801BF0019860A /* Moyohak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moyohak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0349CEF4238801BF0019860A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0349CEFB238801BF0019860A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 			children = (
 				03AEBF71238D908D001CE765 /* IntroViewController.swift */,
 				03276544238E811E007ECAB8 /* RegistrationViewController.swift */,
+				03276548238EC56C007ECAB8 /* OTPViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				0349CF36238CE3C40019860A /* LoginViewController.swift */,
+				0327654A238ED5E4007ECAB8 /* ForgotPasswordViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -479,6 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03276549238EC56C007ECAB8 /* OTPViewController.swift in Sources */,
 				0349CF61238CE3C40019860A /* AppConstants.swift in Sources */,
 				0349CF59238CE3C40019860A /* LoginViewModel.swift in Sources */,
 				03C94B2F238DA8FE00EDC851 /* ScrollContentView.swift in Sources */,
@@ -486,6 +493,7 @@
 				0349CF5E238CE3C40019860A /* CustomTextfield.swift in Sources */,
 				0349CEF5238801BF0019860A /* AppDelegate.swift in Sources */,
 				0349CF62238CE3C40019860A /* ViewNavigator.swift in Sources */,
+				0327654B238ED5E4007ECAB8 /* ForgotPasswordViewController.swift in Sources */,
 				0349CF7B238D79E80019860A /* SCP_SCNormal.swift in Sources */,
 				0349CF7C238D79E80019860A /* SCP_SCJAFillCircle.swift in Sources */,
 				0349CF5D238CE3C40019860A /* Extensions.swift in Sources */,

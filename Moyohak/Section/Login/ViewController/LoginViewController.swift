@@ -43,6 +43,6 @@ class LoginViewController: SuperViewController {
     }
     
     @IBAction func forgotPasswordButtonTapped(sender: UIButton) {
-        
+        LoginViewModel.showForgotPasswordScreen(navigationType: .Push, parentViewController: self)
     }
 }

@@ -18,4 +18,11 @@ class RegistrationViewModel {
                                navigationType: navigationType)
     }
     
+    public static func showOTPScreen(navigationType: NavigationType, parentViewController: UIViewController) {
+        
+        ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().Otp : NavigatorController().OtpNC,
+                               parentViewController: parentViewController,
+                               navigationType: navigationType)
+    }
+    
 }

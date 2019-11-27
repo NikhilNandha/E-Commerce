@@ -30,6 +30,8 @@ class IntroViewController: UIViewController, PaginControl {
         plotScreen()
     }
     
+    //MARK: - UI Methods -
+    
     private func plotScreen() {
         
         addContentViewsInScrollViews()
@@ -71,7 +73,7 @@ class IntroViewController: UIViewController, PaginControl {
     // MARK: - Button Tapped Events -
 
     @IBAction func skipTapped(sender: UIButton) {
-        
+        LoginViewModel.showLoginScreen(navigationType: .Push, parentViewController: self)
     }
     
     @IBAction func nextTapped(sender: UIButton) {
