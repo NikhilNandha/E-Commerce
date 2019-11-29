@@ -39,7 +39,7 @@ class LoginViewController: SuperViewController {
     }
     
     @IBAction func loginButtonTapped(sender: UIButton) {
-        
+        AppRootContainer.tabBarRootContainer(window: AppConstants.appDelegate.window)
     }
     
     @IBAction func forgotPasswordButtonTapped(sender: UIButton) {

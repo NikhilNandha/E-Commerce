@@ -11,6 +11,24 @@
 		03276547238E814E007ECAB8 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03276546238E814E007ECAB8 /* RegistrationViewModel.swift */; };
 		03276549238EC56C007ECAB8 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03276548238EC56C007ECAB8 /* OTPViewController.swift */; };
 		0327654B238ED5E4007ECAB8 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0327654A238ED5E4007ECAB8 /* ForgotPasswordViewController.swift */; };
+		034192792390212E00ACF085 /* Shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034192782390212E00ACF085 /* Shop.storyboard */; };
+		0341927B2390214500ACF085 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0341927A2390214500ACF085 /* ShopViewController.swift */; };
+		0341927D2390215D00ACF085 /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0341927C2390215D00ACF085 /* ShopViewModel.swift */; };
+		034192812390280E00ACF085 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034192802390280E00ACF085 /* TabBar.swift */; };
+		034192832390356600ACF085 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034192822390356600ACF085 /* HomeTabBarController.swift */; };
+		0341928523903C0000ACF085 /* AppRootContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0341928423903C0000ACF085 /* AppRootContainer.swift */; };
+		034192872390420D00ACF085 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034192862390420D00ACF085 /* QRCodeViewController.swift */; };
+		0341928E2390435F00ACF085 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0341928D2390435F00ACF085 /* QRCode.storyboard */; };
+		03419292239044D700ACF085 /* QRCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03419291239044D700ACF085 /* QRCodeViewModel.swift */; };
+		034192A02390F1D600ACF085 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0341929F2390F1D600ACF085 /* Cart.storyboard */; };
+		034192A22390F1E200ACF085 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034192A12390F1E200ACF085 /* CartViewController.swift */; };
+		034192A42390F1F500ACF085 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034192A32390F1F500ACF085 /* CartViewModel.swift */; };
+		034192A62390F20200ACF085 /* Offers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034192A52390F20200ACF085 /* Offers.storyboard */; };
+		034192A82390F20E00ACF085 /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034192A72390F20E00ACF085 /* OffersViewController.swift */; };
+		034192AA2390F22000ACF085 /* OffersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034192A92390F22000ACF085 /* OffersViewModel.swift */; };
+		034192AC2390F23300ACF085 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034192AB2390F23300ACF085 /* Profile.storyboard */; };
+		034192AE2390F24400ACF085 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034192AD2390F24400ACF085 /* ProfileViewController.swift */; };
+		034192B02390F25D00ACF085 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034192AF2390F25D00ACF085 /* ProfileViewModel.swift */; };
 		0349CEF5238801BF0019860A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0349CEF4238801BF0019860A /* AppDelegate.swift */; };
 		0349CEFC238801BF0019860A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0349CEFA238801BF0019860A /* Main.storyboard */; };
 		0349CEFE238801C80019860A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0349CEFD238801C80019860A /* Assets.xcassets */; };
@@ -72,6 +90,24 @@
 		03276546238E814E007ECAB8 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		03276548238EC56C007ECAB8 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		0327654A238ED5E4007ECAB8 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		034192782390212E00ACF085 /* Shop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shop.storyboard; sourceTree = "<group>"; };
+		0341927A2390214500ACF085 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		0341927C2390215D00ACF085 /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
+		034192802390280E00ACF085 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		034192822390356600ACF085 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		0341928423903C0000ACF085 /* AppRootContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootContainer.swift; sourceTree = "<group>"; };
+		034192862390420D00ACF085 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		0341928D2390435F00ACF085 /* QRCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
+		03419291239044D700ACF085 /* QRCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewModel.swift; sourceTree = "<group>"; };
+		0341929F2390F1D600ACF085 /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
+		034192A12390F1E200ACF085 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		034192A32390F1F500ACF085 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		034192A52390F20200ACF085 /* Offers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Offers.storyboard; sourceTree = "<group>"; };
+		034192A72390F20E00ACF085 /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
+		034192A92390F22000ACF085 /* OffersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewModel.swift; sourceTree = "<group>"; };
+		034192AB2390F23300ACF085 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		034192AD2390F24400ACF085 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		034192AF2390F25D00ACF085 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		0349CEF1238801BF0019860A /* Moyohak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moyohak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0349CEF4238801BF0019860A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0349CEFB238801BF0019860A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -142,6 +178,188 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03419274239020EA00ACF085 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				034192952390F15400ACF085 /* Profile */,
+				034192942390F15100ACF085 /* Offers */,
+				034192932390F14E00ACF085 /* Cart */,
+				034192892390431F00ACF085 /* QRCode */,
+				034192882390428A00ACF085 /* Shop */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		03419275239020F700ACF085 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				034192782390212E00ACF085 /* Shop.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		034192762390210B00ACF085 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0341927A2390214500ACF085 /* ShopViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		034192772390211900ACF085 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0341927C2390215D00ACF085 /* ShopViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		034192882390428A00ACF085 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				034192772390211900ACF085 /* ViewModel */,
+				034192762390210B00ACF085 /* ViewController */,
+				03419275239020F700ACF085 /* View */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		034192892390431F00ACF085 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				0341928B2390433A00ACF085 /* ViewModel */,
+				0341928C2390434900ACF085 /* ViewController */,
+				0341928A2390432F00ACF085 /* View */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		0341928A2390432F00ACF085 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0341928D2390435F00ACF085 /* QRCode.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0341928B2390433A00ACF085 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				03419291239044D700ACF085 /* QRCodeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0341928C2390434900ACF085 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				034192862390420D00ACF085 /* QRCodeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		034192932390F14E00ACF085 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				034192982390F17800ACF085 /* ViewModel */,
+				034192972390F17600ACF085 /* ViewController */,
+				034192962390F17300ACF085 /* View */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		034192942390F15100ACF085 /* Offers */ = {
+			isa = PBXGroup;
+			children = (
+				0341929B2390F19000ACF085 /* ViewModel */,
+				0341929A2390F18C00ACF085 /* ViewController */,
+				034192992390F18A00ACF085 /* View */,
+			);
+			path = Offers;
+			sourceTree = "<group>";
+		};
+		034192952390F15400ACF085 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0341929E2390F1AC00ACF085 /* ViewModel */,
+				0341929D2390F1A900ACF085 /* ViewController */,
+				0341929C2390F1A600ACF085 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		034192962390F17300ACF085 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0341929F2390F1D600ACF085 /* Cart.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		034192972390F17600ACF085 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				034192A12390F1E200ACF085 /* CartViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		034192982390F17800ACF085 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				034192A32390F1F500ACF085 /* CartViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		034192992390F18A00ACF085 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				034192A52390F20200ACF085 /* Offers.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0341929A2390F18C00ACF085 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				034192A72390F20E00ACF085 /* OffersViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0341929B2390F19000ACF085 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				034192A92390F22000ACF085 /* OffersViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0341929C2390F1A600ACF085 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				034192AB2390F23300ACF085 /* Profile.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0341929D2390F1A900ACF085 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				034192AD2390F24400ACF085 /* ProfileViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0341929E2390F1AC00ACF085 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				034192AF2390F25D00ACF085 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		0349CEE8238801BF0019860A = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +384,9 @@
 			isa = PBXGroup;
 			children = (
 				0349CEF4238801BF0019860A /* AppDelegate.swift */,
+				0341928423903C0000ACF085 /* AppRootContainer.swift */,
+				034192802390280E00ACF085 /* TabBar.swift */,
+				034192822390356600ACF085 /* HomeTabBarController.swift */,
 				0349CF24238CE3C40019860A /* Section */,
 				0349CF37238CE3C40019860A /* Resources */,
 				0349CEFA238801BF0019860A /* Main.storyboard */,
@@ -197,6 +418,7 @@
 		0349CF24238CE3C40019860A /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				03419274239020EA00ACF085 /* Home */,
 				0349CF25238CE3C40019860A /* Register */,
 				0349CF31238CE3C40019860A /* Login */,
 			);
@@ -450,17 +672,22 @@
 				0349CF6F238CE3C40019860A /* MULI-LIGHTITALIC.TTF in Resources */,
 				0349CF01238801C80019860A /* LaunchScreen.storyboard in Resources */,
 				0349CEFE238801C80019860A /* Assets.xcassets in Resources */,
+				034192AC2390F23300ACF085 /* Profile.storyboard in Resources */,
 				0349CF68238CE3C40019860A /* MULI-BOLD.TTF in Resources */,
 				0349CF6C238CE3C40019860A /* MULI-BLACKITALIC.TTF in Resources */,
 				0349CF6E238CE3C40019860A /* MULI-REGULAR.TTF in Resources */,
 				0349CF65238CE3C40019860A /* MULI-BOLDITALIC.TTF in Resources */,
 				0349CF6A238CE3C40019860A /* MULI-SEMIBOLD.TTF in Resources */,
 				0349CF6D238CE3C40019860A /* MULI-LIGHT.TTF in Resources */,
+				034192A02390F1D600ACF085 /* Cart.storyboard in Resources */,
 				0349CF64238CE3C40019860A /* MULI-EXTRALIGHTITALIC.TTF in Resources */,
+				0341928E2390435F00ACF085 /* QRCode.storyboard in Resources */,
 				0349CEFC238801BF0019860A /* Main.storyboard in Resources */,
+				034192792390212E00ACF085 /* Shop.storyboard in Resources */,
 				0349CF69238CE3C40019860A /* MULI-EXTRABOLDITALIC.TTF in Resources */,
 				0349CF63238CE3C40019860A /* MULI-EXTRALIGHT.TTF in Resources */,
 				0349CF67238CE3C40019860A /* MULI-EXTRABOLD.TTF in Resources */,
+				034192A62390F20200ACF085 /* Offers.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,12 +713,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				03276549238EC56C007ECAB8 /* OTPViewController.swift in Sources */,
+				034192AA2390F22000ACF085 /* OffersViewModel.swift in Sources */,
+				0341928523903C0000ACF085 /* AppRootContainer.swift in Sources */,
 				0349CF61238CE3C40019860A /* AppConstants.swift in Sources */,
 				0349CF59238CE3C40019860A /* LoginViewModel.swift in Sources */,
 				03C94B2F238DA8FE00EDC851 /* ScrollContentView.swift in Sources */,
+				034192AE2390F24400ACF085 /* ProfileViewController.swift in Sources */,
+				034192832390356600ACF085 /* HomeTabBarController.swift in Sources */,
+				034192A42390F1F500ACF085 /* CartViewModel.swift in Sources */,
 				03276547238E814E007ECAB8 /* RegistrationViewModel.swift in Sources */,
+				0341927D2390215D00ACF085 /* ShopViewModel.swift in Sources */,
 				0349CF5E238CE3C40019860A /* CustomTextfield.swift in Sources */,
 				0349CEF5238801BF0019860A /* AppDelegate.swift in Sources */,
+				0341927B2390214500ACF085 /* ShopViewController.swift in Sources */,
+				034192812390280E00ACF085 /* TabBar.swift in Sources */,
 				0349CF62238CE3C40019860A /* ViewNavigator.swift in Sources */,
 				0327654B238ED5E4007ECAB8 /* ForgotPasswordViewController.swift in Sources */,
 				0349CF7B238D79E80019860A /* SCP_SCNormal.swift in Sources */,
@@ -500,11 +735,16 @@
 				0349CF7A238D79E80019860A /* SCP_SCJAFlatBar.swift in Sources */,
 				0349CF60238CE3C40019860A /* PagingControl.swift in Sources */,
 				0349CF5B238CE3C40019860A /* LoginViewController.swift in Sources */,
+				034192A82390F20E00ACF085 /* OffersViewController.swift in Sources */,
 				03276545238E811E007ECAB8 /* RegistrationViewController.swift in Sources */,
 				0349CF5F238CE3C40019860A /* NavigatorController.swift in Sources */,
 				0349CF7D238D79E80019860A /* SCPageControlView.swift in Sources */,
 				0349CF5C238CE3C40019860A /* SuperViewController.swift in Sources */,
+				034192872390420D00ACF085 /* QRCodeViewController.swift in Sources */,
+				034192A22390F1E200ACF085 /* CartViewController.swift in Sources */,
+				034192B02390F25D00ACF085 /* ProfileViewModel.swift in Sources */,
 				0349CF79238D79E80019860A /* SCP_SCJAMoveCircle.swift in Sources */,
+				03419292239044D700ACF085 /* QRCodeViewModel.swift in Sources */,
 				03AEBF72238D908D001CE765 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
