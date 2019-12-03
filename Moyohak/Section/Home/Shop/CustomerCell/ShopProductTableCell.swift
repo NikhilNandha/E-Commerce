@@ -18,6 +18,11 @@ class ShopProductTableCell: UITableViewCell {
     
     @IBOutlet var collectionV : UICollectionView!
     
+    @IBOutlet var collectionHeight : NSLayoutConstraint!
+    
+    let cellHeight : Double = 243
+    let productsCount = 4
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -29,4 +34,39 @@ class ShopProductTableCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func configureCell(indexPath: IndexPath, data: [String: Any]) {
+        collectionV.reloadData()
+        
+        let totalheight = (Int(cellHeight) * (productsCount/2)) + productsCount
+        
+        collectionHeight.constant = CGFloat(totalheight)
+        self.layoutIfNeeded()
+    }
+    
 }
+
+extension ShopProductTableCell : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return productsCount
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShopProductCollectionCell", for: indexPath) as! ShopProductCollectionCell
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize.init(width: Double((collectionView.bounds.width/2) - 2), height: cellHeight)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 2
+    }
+}
+

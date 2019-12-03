@@ -19,6 +19,9 @@ class ShopViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        tableV.reloadData()
+    }
 
     
     // MARK: - Button Tapped Methods -
@@ -44,11 +47,33 @@ class ShopViewController: UIViewController, UITextFieldDelegate {
 extension ShopViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell.init()
+        
+        return cellFor(tableView:tableView, indexPath: indexPath)
+        
+    }
+    
+    private func cellFor(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        
+        switch indexPath.row {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ShopCategoriesTableCell", for: indexPath) as! ShopCategoriesTableCell
+            cell.configureCell(indexPath: indexPath, data: [:])
+            return cell
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ShopBannerTableCell", for: indexPath) as! ShopBannerTableCell
+            cell.configureCell(indexPath: indexPath, data: [:])
+            return cell
+        case 2, 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ShopProductTableCell", for: indexPath) as! ShopProductTableCell
+            cell.configureCell(indexPath: indexPath, data: [:])
+            return cell
+        default:
+            return UITableViewCell()
+        }
     }
     
 }
