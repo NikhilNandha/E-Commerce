@@ -14,7 +14,7 @@ enum NavigationType {
     case Present
 }
 
-class ViewNavigator {
+class ViewNavigator: NSObject, UINavigationBarDelegate {
     
     static let shared = ViewNavigator()
     
@@ -35,6 +35,7 @@ class ViewNavigator {
         case .Push:
             guard let _ = parentViewController.navigationController else { return }
             
+            parentViewController.navigationController?.navigationBar.delegate = self
             setViewControllers(current: viewController, parent: parentViewController, navType: navigationType)
             parentViewController.navigationController?.pushViewController(viewController, animated: true)
             
@@ -61,6 +62,10 @@ class ViewNavigator {
             break
         default: break
         }
+    }
+    
+    func navigationBar(_ navigationBar: UINavigationBar, didPop item: UINavigationItem) {
+        navigateBack()
     }
     
     //MARK: - Public Setters -
