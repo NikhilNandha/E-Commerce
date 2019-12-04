@@ -63,6 +63,12 @@ class ViewNavigator {
         }
     }
     
+    //MARK: - Public Setters -
+    
+    func setCurrentViewController(controller: UIViewController) {
+        currentViewController = controller
+        parentViewControllers = [UIViewController]()
+    }
     
     //MARK: - Stored properties methods -
     

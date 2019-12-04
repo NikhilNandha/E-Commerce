@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IntroViewController: UIViewController, PaginControl {
+class IntroViewController: SuperViewController, PaginControl {
     
     @IBOutlet var buttonNext: UIButton!
     @IBOutlet var buttonPrev: UIButton!

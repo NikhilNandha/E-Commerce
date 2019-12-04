@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OTPViewController: UIViewController, UITextFieldDelegate {
+class OTPViewController: SuperViewController, UITextFieldDelegate {
     
     @IBOutlet var textfield1: UITextField!
     @IBOutlet var textfield2: UITextField!

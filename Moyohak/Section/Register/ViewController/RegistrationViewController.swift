@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegistrationViewController: UIViewController {
+class RegistrationViewController: SuperViewController {
     
     @IBOutlet var textfieldMobile: UITextField!
     @IBOutlet var textfieldPassword: UITextField!

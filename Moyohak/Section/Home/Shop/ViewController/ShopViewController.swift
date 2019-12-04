@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShopViewController: UIViewController, UITextFieldDelegate {
+class ShopViewController: SuperViewController, UITextFieldDelegate {
 
     @IBOutlet var searchTextfield: UITextField!
     @IBOutlet var tableV: UITableView!
@@ -23,6 +23,13 @@ class ShopViewController: UIViewController, UITextFieldDelegate {
         tableV.reloadData()
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+    }
     
     // MARK: - Button Tapped Methods -
     

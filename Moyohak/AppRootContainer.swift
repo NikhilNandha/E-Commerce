@@ -13,9 +13,19 @@ class AppRootContainer {
     
     static func tabBarRootContainer(window: UIWindow?) {
         window?.rootViewController = TabBar.shared.initialize()
+        
+        if let navController = TabBar.shared.controllers[0] as? UINavigationController {
+            ViewNavigator.shared.setCurrentViewController(controller: navController.viewControllers[0])
+        }else {
+            ViewNavigator.shared.setCurrentViewController(controller: TabBar.shared.controllers[0])
+        }
     }
     
     static func introRootContainer(window: UIWindow?) {
-        window?.rootViewController = NavigatorController().IntroNC
+        
+        let introNC = NavigatorController().IntroNC
+        window?.rootViewController = introNC
+        ViewNavigator.shared.setCurrentViewController(controller: introNC.viewControllers[0])
+        
     }
 }

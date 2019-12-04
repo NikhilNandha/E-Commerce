@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ForgotPasswordViewController: UIViewController {
+class ForgotPasswordViewController: SuperViewController {
 
     @IBOutlet var viewMobileNumber: UIView!
     @IBOutlet var textfieldMobileNumber: UITextField!

@@ -16,6 +16,7 @@ struct Storyboard {
     let cart: UIStoryboard = UIStoryboard(name: "Cart", bundle: nil)
     let offers: UIStoryboard = UIStoryboard(name: "Offers", bundle: nil)
     let profile: UIStoryboard = UIStoryboard(name: "Profile", bundle: nil)
+    let product: UIStoryboard = UIStoryboard(name: "Product", bundle: nil)
 }
 
 struct NavigatorController {
@@ -53,4 +54,11 @@ struct NavigatorController {
     
     let Profile = Storyboard().profile.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
     let ProfileNC = Storyboard().profile.instantiateViewController(withIdentifier: "ProfileViewController_NC") as! UINavigationController
+    
+    //MARK: - Products -
+    
+    let ProductList = Storyboard().product.instantiateViewController(withIdentifier: "ProductListViewViewController") as! ProductListViewViewController
+    let ProductListNC = Storyboard().product.instantiateViewController(withIdentifier: "ProductListViewViewController_NC") as! UINavigationController
+    
+    
 }

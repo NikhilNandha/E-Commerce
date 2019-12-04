@@ -18,8 +18,10 @@ class TabBar : NSObject, UITabBarControllerDelegate {
     
     private let tabBarController = HomeTabBarController()
     
-    public var controllers : [UIViewController] {
-        return tabBarController.viewControllers ?? [UIViewController]()
+    var controllers : [UIViewController] {
+        get {
+            tabBarController.viewControllers ?? [UIViewController]()
+        }
     }
     
     public func initialize() -> UITabBarController {
@@ -55,9 +57,7 @@ class TabBar : NSObject, UITabBarControllerDelegate {
     }
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-//        if tabBarController.selectedIndex == 1 {
-//            tabBarController.selectedIndex = 0
-//        }
+        print(viewController)
     }
     
 }
