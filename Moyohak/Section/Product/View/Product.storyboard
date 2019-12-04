@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -54,19 +54,19 @@
                                     <constraint firstItem="2J4-ZV-RVc" firstAttribute="top" secondItem="RjX-Qy-8h5" secondAttribute="top" id="uYz-bD-xua"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Dbf-TX-5cD">
-                                <rect key="frame" x="0.0" y="136" width="414" height="760"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mHx-Hd-W2W">
+                                <rect key="frame" x="0.0" y="136" width="414" height="726"/>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="2" minimumInteritemSpacing="2" id="M6q-oc-2Wd">
-                                    <size key="itemSize" width="204" height="243"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Cid-zt-CAb">
+                                    <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
                                 <connections>
-                                    <outlet property="dataSource" destination="VYJ-cI-imy" id="gEU-dO-Hi9"/>
-                                    <outlet property="delegate" destination="VYJ-cI-imy" id="T0r-1K-n5s"/>
+                                    <outlet property="dataSource" destination="VYJ-cI-imy" id="EqS-zw-Zmn"/>
+                                    <outlet property="delegate" destination="VYJ-cI-imy" id="nZ4-HA-UAd"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -74,17 +74,17 @@
                         <constraints>
                             <constraint firstItem="RjX-Qy-8h5" firstAttribute="top" secondItem="al9-33-tqo" secondAttribute="top" id="1WJ-R8-aTF"/>
                             <constraint firstItem="RjX-Qy-8h5" firstAttribute="leading" secondItem="al9-33-tqo" secondAttribute="leading" id="4Xr-19-r1C"/>
-                            <constraint firstItem="Dbf-TX-5cD" firstAttribute="leading" secondItem="al9-33-tqo" secondAttribute="leading" id="7eg-Jv-BXY"/>
-                            <constraint firstAttribute="bottom" secondItem="Dbf-TX-5cD" secondAttribute="bottom" id="D08-kA-mrZ"/>
-                            <constraint firstItem="Dbf-TX-5cD" firstAttribute="top" secondItem="RjX-Qy-8h5" secondAttribute="bottom" id="Fat-Ii-K9U"/>
+                            <constraint firstItem="al9-33-tqo" firstAttribute="bottom" secondItem="mHx-Hd-W2W" secondAttribute="bottom" id="Dbn-uk-AN5"/>
+                            <constraint firstItem="mHx-Hd-W2W" firstAttribute="leading" secondItem="al9-33-tqo" secondAttribute="leading" id="PRv-7m-LSB"/>
+                            <constraint firstItem="mHx-Hd-W2W" firstAttribute="top" secondItem="RjX-Qy-8h5" secondAttribute="bottom" id="Sqj-Yr-ngC"/>
+                            <constraint firstItem="al9-33-tqo" firstAttribute="trailing" secondItem="mHx-Hd-W2W" secondAttribute="trailing" id="YLP-LC-0vr"/>
                             <constraint firstItem="al9-33-tqo" firstAttribute="trailing" secondItem="RjX-Qy-8h5" secondAttribute="trailing" id="ecQ-rM-D0E"/>
-                            <constraint firstItem="Dbf-TX-5cD" firstAttribute="trailing" secondItem="al9-33-tqo" secondAttribute="trailing" id="gy5-Ol-9zc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="al9-33-tqo"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ne0-P2-4OD"/>
                     <connections>
-                        <outlet property="productsCollection" destination="Dbf-TX-5cD" id="0Ma-1O-uhg"/>
+                        <outlet property="productsCollectionView" destination="mHx-Hd-W2W" id="dix-Q4-nAM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HhR-I3-gfr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

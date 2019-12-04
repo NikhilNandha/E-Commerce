@@ -17,6 +17,7 @@ class ProductListCollectionCell: UICollectionViewCell {
     @IBOutlet var labelPriceSlashed: UILabel!
     @IBOutlet var labelOff: UILabel!
     @IBOutlet var buttonLike: UIButton!
+    @IBOutlet var viewContainer: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

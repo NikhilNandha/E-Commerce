@@ -10,7 +10,7 @@ import UIKit
 
 class ProductListViewViewController: SuperViewController {
 
-    @IBOutlet var productsCollection: UICollectionView!
+    @IBOutlet var productsCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +26,15 @@ class ProductListViewViewController: SuperViewController {
     }
     
     private func configureData() {
-        productsCollection.register(UINib.init(nibName: "ProductListCollectionCell", bundle: nil), forCellWithReuseIdentifier: "ProductListCollectionCell")
+        productsCollectionView.register(UINib.init(nibName: "ProductListCollectionCell", bundle: nil), forCellWithReuseIdentifier: "ProductListCollectionCell")
+        
+        productsCollectionView.collectionViewLayout = ProductsCollectionViewFlowLayout(collectionView: productsCollectionView)
+        
     }
     
     private func plotScren() {
         
-        productsCollection.reloadData()
+        productsCollectionView.reloadData()
     }
     
     // MARK: - Button Tapped -
@@ -46,7 +49,7 @@ class ProductListViewViewController: SuperViewController {
 
 }
 
-extension ProductListViewViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension ProductListViewViewController : UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
@@ -61,15 +64,4 @@ extension ProductListViewViewController : UICollectionViewDelegate, UICollection
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize.init(width: (collectionView.frame.size.width/2) - 2, height: 244.0)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 2
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 2
-    }
 }

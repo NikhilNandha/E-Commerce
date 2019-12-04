@@ -29,6 +29,8 @@
 		034192AC2390F23300ACF085 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034192AB2390F23300ACF085 /* Profile.storyboard */; };
 		034192AE2390F24400ACF085 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034192AD2390F24400ACF085 /* ProfileViewController.swift */; };
 		034192B02390F25D00ACF085 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034192AF2390F25D00ACF085 /* ProfileViewModel.swift */; };
+		0342BA2B23980B8200DF135A /* ProductListCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0342BA2923980B8200DF135A /* ProductListCollectionCell.xib */; };
+		0342BA2D23982F2D00DF135A /* ProductsCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0342BA2C23982F2D00DF135A /* ProductsCollectionViewFlowLayout.swift */; };
 		0349CEF5238801BF0019860A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0349CEF4238801BF0019860A /* AppDelegate.swift */; };
 		0349CEFC238801BF0019860A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0349CEFA238801BF0019860A /* Main.storyboard */; };
 		0349CEFE238801C80019860A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0349CEFD238801C80019860A /* Assets.xcassets */; };
@@ -74,7 +76,6 @@
 		03C32F0E239788CA004DEE4E /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C32F0D239788CA004DEE4E /* ProductViewModel.swift */; };
 		03C32F10239788EB004DEE4E /* ProductListViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C32F0F239788EB004DEE4E /* ProductListViewViewController.swift */; };
 		03C32F142397AB8F004DEE4E /* ProductListCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C32F122397AB8F004DEE4E /* ProductListCollectionCell.swift */; };
-		03C32F152397AB8F004DEE4E /* ProductListCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C32F132397AB8F004DEE4E /* ProductListCollectionCell.xib */; };
 		03C94B2F238DA8FE00EDC851 /* ScrollContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C94B2E238DA8FE00EDC851 /* ScrollContentView.swift */; };
 		03C94B31238DA91000EDC851 /* ScrollContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C94B30238DA91000EDC851 /* ScrollContentView.xib */; };
 /* End PBXBuildFile section */
@@ -119,6 +120,8 @@
 		034192AB2390F23300ACF085 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		034192AD2390F24400ACF085 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		034192AF2390F25D00ACF085 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		0342BA2923980B8200DF135A /* ProductListCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListCollectionCell.xib; sourceTree = "<group>"; };
+		0342BA2C23982F2D00DF135A /* ProductsCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		0349CEF1238801BF0019860A /* Moyohak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moyohak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0349CEF4238801BF0019860A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0349CEFB238801BF0019860A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -170,7 +173,6 @@
 		03C32F0D239788CA004DEE4E /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		03C32F0F239788EB004DEE4E /* ProductListViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewViewController.swift; sourceTree = "<group>"; };
 		03C32F122397AB8F004DEE4E /* ProductListCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCollectionCell.swift; sourceTree = "<group>"; };
-		03C32F132397AB8F004DEE4E /* ProductListCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListCollectionCell.xib; sourceTree = "<group>"; };
 		03C94B2E238DA8FE00EDC851 /* ScrollContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollContentView.swift; sourceTree = "<group>"; };
 		03C94B30238DA91000EDC851 /* ScrollContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollContentView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -628,7 +630,8 @@
 			isa = PBXGroup;
 			children = (
 				03C32F122397AB8F004DEE4E /* ProductListCollectionCell.swift */,
-				03C32F132397AB8F004DEE4E /* ProductListCollectionCell.xib */,
+				0342BA2923980B8200DF135A /* ProductListCollectionCell.xib */,
+				0342BA2C23982F2D00DF135A /* ProductsCollectionViewFlowLayout.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -746,6 +749,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0342BA2B23980B8200DF135A /* ProductListCollectionCell.xib in Resources */,
 				0349CF6B238CE3C40019860A /* MULI-SEMIBOLDITALIC.TTF in Resources */,
 				0349CF70238CE3C40019860A /* MULI-REGULARITALIC.TTF in Resources */,
 				0349CF66238CE3C40019860A /* MULI-BLACK.TTF in Resources */,
@@ -759,7 +763,6 @@
 				03C32F0C239788B8004DEE4E /* Product.storyboard in Resources */,
 				0349CF6E238CE3C40019860A /* MULI-REGULAR.TTF in Resources */,
 				0349CF65238CE3C40019860A /* MULI-BOLDITALIC.TTF in Resources */,
-				03C32F152397AB8F004DEE4E /* ProductListCollectionCell.xib in Resources */,
 				0349CF6A238CE3C40019860A /* MULI-SEMIBOLD.TTF in Resources */,
 				0349CF6D238CE3C40019860A /* MULI-LIGHT.TTF in Resources */,
 				034192A02390F1D600ACF085 /* Cart.storyboard in Resources */,
@@ -829,6 +832,7 @@
 				03276545238E811E007ECAB8 /* RegistrationViewController.swift in Sources */,
 				0349CF5F238CE3C40019860A /* NavigatorController.swift in Sources */,
 				0349CF7D238D79E80019860A /* SCPageControlView.swift in Sources */,
+				0342BA2D23982F2D00DF135A /* ProductsCollectionViewFlowLayout.swift in Sources */,
 				0349CF5C238CE3C40019860A /* SuperViewController.swift in Sources */,
 				034192872390420D00ACF085 /* QRCodeViewController.swift in Sources */,
 				034192A22390F1E200ACF085 /* CartViewController.swift in Sources */,
