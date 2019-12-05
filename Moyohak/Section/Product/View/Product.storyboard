@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController storyboardIdentifier="ProductListViewViewController" id="VYJ-cI-imy" customClass="ProductListViewViewController" customModule="Moyohak" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wqH-2e-ZS6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RjX-Qy-8h5">
-                                <rect key="frame" x="0.0" y="88" width="414" height="48"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2J4-ZV-RVc">
                                         <rect key="frame" x="0.0" y="0.0" width="206.5" height="48"/>
@@ -55,7 +55,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mHx-Hd-W2W">
-                                <rect key="frame" x="0.0" y="136" width="414" height="726"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="760"/>
                                 <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Cid-zt-CAb">
                                     <size key="itemSize" width="50" height="50"/>
@@ -74,7 +74,7 @@
                         <constraints>
                             <constraint firstItem="RjX-Qy-8h5" firstAttribute="top" secondItem="al9-33-tqo" secondAttribute="top" id="1WJ-R8-aTF"/>
                             <constraint firstItem="RjX-Qy-8h5" firstAttribute="leading" secondItem="al9-33-tqo" secondAttribute="leading" id="4Xr-19-r1C"/>
-                            <constraint firstItem="al9-33-tqo" firstAttribute="bottom" secondItem="mHx-Hd-W2W" secondAttribute="bottom" id="Dbn-uk-AN5"/>
+                            <constraint firstAttribute="bottom" secondItem="mHx-Hd-W2W" secondAttribute="bottom" id="Dbn-uk-AN5"/>
                             <constraint firstItem="mHx-Hd-W2W" firstAttribute="leading" secondItem="al9-33-tqo" secondAttribute="leading" id="PRv-7m-LSB"/>
                             <constraint firstItem="mHx-Hd-W2W" firstAttribute="top" secondItem="RjX-Qy-8h5" secondAttribute="bottom" id="Sqj-Yr-ngC"/>
                             <constraint firstItem="al9-33-tqo" firstAttribute="trailing" secondItem="mHx-Hd-W2W" secondAttribute="trailing" id="YLP-LC-0vr"/>
@@ -96,7 +96,7 @@
             <objects>
                 <navigationController storyboardIdentifier="ProductListViewViewController_NC" automaticallyAdjustsScrollViewInsets="NO" id="H4H-H0-S7t" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pYo-fG-pAs">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="pYo-fG-pAs">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
