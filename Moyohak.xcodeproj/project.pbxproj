@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031DDE71239D374500CEF9B6 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DDE70239D374500CEF9B6 /* ProductDetailsViewController.swift */; };
 		03276545238E811E007ECAB8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03276544238E811E007ECAB8 /* RegistrationViewController.swift */; };
 		03276547238E814E007ECAB8 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03276546238E814E007ECAB8 /* RegistrationViewModel.swift */; };
 		03276549238EC56C007ECAB8 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03276548238EC56C007ECAB8 /* OTPViewController.swift */; };
@@ -98,6 +99,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		031DDE70239D374500CEF9B6 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		03276544238E811E007ECAB8 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		03276546238E814E007ECAB8 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		03276548238EC56C007ECAB8 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
@@ -622,6 +624,7 @@
 			isa = PBXGroup;
 			children = (
 				03C32F0F239788EB004DEE4E /* ProductListViewViewController.swift */,
+				031DDE70239D374500CEF9B6 /* ProductDetailsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -831,6 +834,7 @@
 				034192A82390F20E00ACF085 /* OffersViewController.swift in Sources */,
 				03276545238E811E007ECAB8 /* RegistrationViewController.swift in Sources */,
 				0349CF5F238CE3C40019860A /* NavigatorController.swift in Sources */,
+				031DDE71239D374500CEF9B6 /* ProductDetailsViewController.swift in Sources */,
 				0349CF7D238D79E80019860A /* SCPageControlView.swift in Sources */,
 				0342BA2D23982F2D00DF135A /* ProductsCollectionViewFlowLayout.swift in Sources */,
 				0349CF5C238CE3C40019860A /* SuperViewController.swift in Sources */,
