@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        AppRootContainer.introRootContainer(window: window)
+        AppRootContainer.setIntroScreen(window: window)
         window?.makeKeyAndVisible()
         
         return true

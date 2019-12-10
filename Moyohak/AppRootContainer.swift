@@ -11,21 +11,32 @@ import UIKit
 
 class AppRootContainer {
     
-    static func tabBarRootContainer(window: UIWindow?) {
-        window?.rootViewController = TabBar.shared.initialize()
+    static func setTabBar(window: UIWindow?) {
+        AppRootContainer.setNavigationAppearances()
         
+        window?.rootViewController = TabBar.shared.initialize()
+        window?.backgroundColor = UIColor.white
         if let navController = TabBar.shared.controllers[0] as? UINavigationController {
-            ViewNavigator.shared.setCurrentViewController(controller: navController.viewControllers[0])
+            ViewNavigator.shared.setInitialCurrentViewController(controller: navController.viewControllers[0])
         }else {
-            ViewNavigator.shared.setCurrentViewController(controller: TabBar.shared.controllers[0])
+            ViewNavigator.shared.setInitialCurrentViewController(controller: TabBar.shared.controllers[0])
         }
     }
     
-    static func introRootContainer(window: UIWindow?) {
+    static func setIntroScreen(window: UIWindow?) {
+        AppRootContainer.setNavigationAppearances()
         
         let introNC = NavigatorController().IntroNC
         window?.rootViewController = introNC
-        ViewNavigator.shared.setCurrentViewController(controller: introNC.viewControllers[0])
+        window?.backgroundColor = UIColor.white
+        ViewNavigator.shared.setInitialCurrentViewController(controller: introNC.viewControllers[0])
         
     }
+    
+    static func setNavigationAppearances() {
+        UINavigationBar.appearance().barTintColor = UIColor.ThemeColorPrimary
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UIBarButtonItem.appearance().setBackButtonBackgroundImage(#imageLiteral(resourceName: "Transparent"), for: .normal, barMetrics: .default)
+    }
+    
 }

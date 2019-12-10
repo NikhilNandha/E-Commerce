@@ -439,7 +439,7 @@
             <objects>
                 <navigationController storyboardIdentifier="ShopViewController_NC" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="58o-fB-3Mz" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y5x-gv-pkc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Y5x-gv-pkc">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
