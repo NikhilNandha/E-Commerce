@@ -188,11 +188,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="216" id="3Fa-de-e8g">
-                                        <rect key="frame" x="0.0" y="414" width="414" height="216"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="222" id="3Fa-de-e8g">
+                                        <rect key="frame" x="0.0" y="414" width="414" height="222"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Fa-de-e8g" id="KP5-pJ-QHj">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="222"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HP Pavillion x360 Core i7 8th Gen - (12 GB/512 GB/Windows 10 Home/4 Graphic Card/" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZG-ZY-WYS">
@@ -305,6 +305,81 @@
                                                 <constraint firstItem="Aeo-O4-ptB" firstAttribute="leading" secondItem="BOr-GT-J3b" secondAttribute="leading" constant="-2" id="ugH-z8-CKC"/>
                                                 <constraint firstItem="pZb-KO-lzA" firstAttribute="centerY" secondItem="v3s-q3-f30" secondAttribute="centerY" id="wKo-9L-ZKu"/>
                                                 <constraint firstItem="Aeo-O4-ptB" firstAttribute="trailing" secondItem="BOr-GT-J3b" secondAttribute="trailing" constant="2" id="wYk-zD-Kaz"/>
+                                                <constraint firstAttribute="bottom" secondItem="Sg6-aO-Cm1" secondAttribute="bottom" constant="24" id="xBw-lZ-cea"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="451" id="SpI-3B-eql">
+                                        <rect key="frame" x="0.0" y="636" width="414" height="451"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SpI-3B-eql" id="xMV-n2-RBC">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="451"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aiP-Nv-xzF" userLabel="Seperator">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="2"/>
+                                                    <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="2" id="RJF-wP-11N"/>
+                                                    </constraints>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2C-c5-ekt">
+                                                    <rect key="frame" x="0.0" y="2" width="207" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="sRu-4X-fUR"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="17"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Product Details">
+                                                        <color key="titleColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <state key="selected" title="Product Details">
+                                                        <color key="titleColor" red="0.0" green="0.49803921568627452" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ESd-PU-PES" userLabel="Seperator">
+                                                    <rect key="frame" x="206" y="2" width="2" height="48"/>
+                                                    <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="2" id="SlC-Bf-jsS"/>
+                                                    </constraints>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2f2-Xh-fRX">
+                                                    <rect key="frame" x="207" y="2" width="207" height="48"/>
+                                                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="17"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Share">
+                                                        <color key="titleColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <state key="selected" title="Share">
+                                                        <color key="titleColor" red="0.0" green="0.49803921569999998" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="49D-Rd-byJ" userLabel="Seperator">
+                                                    <rect key="frame" x="0.0" y="50" width="414" height="2"/>
+                                                    <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="2" id="3cx-Aw-wNQ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2f2-Xh-fRX" firstAttribute="height" secondItem="y2C-c5-ekt" secondAttribute="height" id="0pA-Y0-Su5"/>
+                                                <constraint firstItem="2f2-Xh-fRX" firstAttribute="top" secondItem="aiP-Nv-xzF" secondAttribute="bottom" id="5la-qp-zYp"/>
+                                                <constraint firstItem="ESd-PU-PES" firstAttribute="bottom" secondItem="y2C-c5-ekt" secondAttribute="bottom" id="9ed-cY-3PG"/>
+                                                <constraint firstItem="aiP-Nv-xzF" firstAttribute="top" secondItem="xMV-n2-RBC" secondAttribute="top" id="AG2-qJ-LWK"/>
+                                                <constraint firstAttribute="trailing" secondItem="2f2-Xh-fRX" secondAttribute="trailing" id="Bdt-RO-vPS"/>
+                                                <constraint firstItem="49D-Rd-byJ" firstAttribute="top" secondItem="y2C-c5-ekt" secondAttribute="bottom" id="DkG-IX-XyS"/>
+                                                <constraint firstItem="y2C-c5-ekt" firstAttribute="leading" secondItem="xMV-n2-RBC" secondAttribute="leading" id="Efg-TP-LkA"/>
+                                                <constraint firstItem="ESd-PU-PES" firstAttribute="leading" secondItem="y2C-c5-ekt" secondAttribute="trailing" constant="-1" id="Gfk-K9-lsE"/>
+                                                <constraint firstItem="ESd-PU-PES" firstAttribute="top" secondItem="y2C-c5-ekt" secondAttribute="top" id="Icg-P4-vWz"/>
+                                                <constraint firstItem="2f2-Xh-fRX" firstAttribute="leading" secondItem="y2C-c5-ekt" secondAttribute="trailing" id="Keg-JH-dx7"/>
+                                                <constraint firstItem="y2C-c5-ekt" firstAttribute="top" secondItem="aiP-Nv-xzF" secondAttribute="bottom" id="LgZ-2x-DMs"/>
+                                                <constraint firstItem="aiP-Nv-xzF" firstAttribute="leading" secondItem="xMV-n2-RBC" secondAttribute="leading" id="N9z-e8-coS"/>
+                                                <constraint firstAttribute="trailing" secondItem="aiP-Nv-xzF" secondAttribute="trailing" id="XW7-8b-4j4"/>
+                                                <constraint firstItem="49D-Rd-byJ" firstAttribute="trailing" secondItem="aiP-Nv-xzF" secondAttribute="trailing" id="bUe-6F-jk4"/>
+                                                <constraint firstItem="2f2-Xh-fRX" firstAttribute="width" secondItem="y2C-c5-ekt" secondAttribute="width" id="fWg-8C-GlQ"/>
+                                                <constraint firstItem="49D-Rd-byJ" firstAttribute="leading" secondItem="aiP-Nv-xzF" secondAttribute="leading" id="kGH-UG-4Sa"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
