@@ -103,35 +103,25 @@
             </objects>
             <point key="canvasLocation" x="978.26086956521749" y="62.946428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Product Details View Controller-->
         <scene sceneID="t3G-FH-oBf">
             <objects>
-                <viewController id="C2j-zZ-SlW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductDetailsViewController" id="C2j-zZ-SlW" customClass="ProductDetailsViewController" customModule="Moyohak" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Zq-vR-qi6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="FgA-mS-SLU">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="FgA-mS-SLU">
                                 <rect key="frame" x="0.0" y="88" width="414" height="718"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="386" id="Wd5-Yp-bBV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductImageTableCell" rowHeight="386" id="Wd5-Yp-bBV" customClass="ProductImageTableCell" customModule="Moyohak" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="386"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wd5-Yp-bBV" id="SCI-Kd-y10">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="386"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12Y-Ym-xzP">
-                                                    <rect key="frame" x="364" y="12" width="38" height="38"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="38" id="NHH-Lh-P0y"/>
-                                                        <constraint firstAttribute="height" constant="38" id="QWB-JH-MxT"/>
-                                                    </constraints>
-                                                    <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
-                                                    <state key="normal" image="Unlike"/>
-                                                </button>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HKF-Fd-6Vc">
                                                     <rect key="frame" x="14" y="311" width="386" height="65"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -145,7 +135,7 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="o2f-C4-Fk8">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductDetailsImageCollectionCell" id="o2f-C4-Fk8" customClass="ProductDetailsImageCollectionCell" customModule="Moyohak" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.5" width="64" height="64"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="02l-Qp-GA6">
@@ -164,8 +154,15 @@
                                                                 </constraints>
                                                             </collectionViewCellContentView>
                                                             <size key="customSize" width="64" height="64"/>
+                                                            <connections>
+                                                                <outlet property="imageView" destination="afe-vs-9Fx" id="W53-5B-yvj"/>
+                                                            </connections>
                                                         </collectionViewCell>
                                                     </cells>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="Wd5-Yp-bBV" id="bcC-0w-7Rp"/>
+                                                        <outlet property="delegate" destination="Wd5-Yp-bBV" id="abi-Ym-C39"/>
+                                                    </connections>
                                                 </collectionView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yyh-yC-muf">
                                                     <rect key="frame" x="15" y="15" width="384" height="280"/>
@@ -174,6 +171,16 @@
                                                         <constraint firstAttribute="width" secondItem="Yyh-yC-muf" secondAttribute="height" multiplier="48:35" id="kFr-SS-TjW"/>
                                                     </constraints>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12Y-Ym-xzP">
+                                                    <rect key="frame" x="364" y="12" width="38" height="38"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="38" id="NHH-Lh-P0y"/>
+                                                        <constraint firstAttribute="height" constant="38" id="QWB-JH-MxT"/>
+                                                    </constraints>
+                                                    <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                                                    <state key="normal" image="Unlike"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="HKF-Fd-6Vc" secondAttribute="trailing" constant="14" id="DdV-Tb-x58"/>
@@ -187,8 +194,13 @@
                                                 <constraint firstItem="Yyh-yC-muf" firstAttribute="top" secondItem="SCI-Kd-y10" secondAttribute="top" constant="15" id="tTb-1R-OBX"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionV" destination="HKF-Fd-6Vc" id="HHH-gJ-ihb"/>
+                                            <outlet property="imageV" destination="Yyh-yC-muf" id="0rT-7l-3u1"/>
+                                            <outlet property="likeButton" destination="12Y-Ym-xzP" id="PQB-Hv-92e"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="222" id="3Fa-de-e8g">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductDetailsTableCell" rowHeight="222" id="3Fa-de-e8g" customClass="ProductDetailsTableCell" customModule="Moyohak" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="414" width="414" height="222"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Fa-de-e8g" id="KP5-pJ-QHj">
@@ -308,8 +320,18 @@
                                                 <constraint firstAttribute="bottom" secondItem="Sg6-aO-Cm1" secondAttribute="bottom" constant="24" id="xBw-lZ-cea"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="buttonMore" destination="XNq-Wi-Der" id="cBF-Zt-yaR"/>
+                                            <outlet property="labelBrandName" destination="aZ9-Uc-J27" id="QHy-mJ-gHq"/>
+                                            <outlet property="labelName" destination="lZG-ZY-WYS" id="5nF-Ca-in2"/>
+                                            <outlet property="labelOff" destination="na6-Gh-mQJ" id="akC-0k-sWb"/>
+                                            <outlet property="labelPrice" destination="v3s-q3-f30" id="KEo-b8-qZw"/>
+                                            <outlet property="labelPriceSlashed" destination="BOr-GT-J3b" id="gSj-kB-LAn"/>
+                                            <outlet property="labelRatingAndComments" destination="zeN-Qz-NNS" id="owe-re-RVW"/>
+                                            <outlet property="labelRatingPercent" destination="xQ4-Tr-QOi" id="TUG-YG-TXU"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="284" id="SpI-3B-eql">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductDeliveryTableCell" rowHeight="284" id="SpI-3B-eql" customClass="ProductDeliveryTableCell" customModule="Moyohak" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="636" width="414" height="284"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SpI-3B-eql" id="xMV-n2-RBC">
@@ -461,8 +483,15 @@
                                                 <constraint firstItem="WzK-bH-TdH" firstAttribute="top" secondItem="yTw-Cl-Ktv" secondAttribute="bottom" constant="16" id="vXR-4Y-KQF"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="buttonProductDetails" destination="y2C-c5-ekt" id="tqY-av-369"/>
+                                            <outlet property="buttonShare" destination="2f2-Xh-fRX" id="R14-dS-pdz"/>
+                                            <outlet property="labelDeliveryCharges" destination="CDA-ev-S05" id="ptZ-OW-wZb"/>
+                                            <outlet property="labelDeliveryDays" destination="yTw-Cl-Ktv" id="Mxu-la-Odh"/>
+                                            <outlet property="labelDeliveryPincode" destination="J5B-3O-umb" id="ixR-Rf-oXp"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="293" id="XRO-SM-Xmm">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductSellerTableCell" rowHeight="293" id="XRO-SM-Xmm" customClass="ProductSellerTableCell" customModule="Moyohak" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="920" width="414" height="293"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XRO-SM-Xmm" id="VXg-Sf-5VC">
@@ -609,8 +638,16 @@
                                                 <constraint firstItem="KW9-si-Vvf" firstAttribute="top" secondItem="suH-ei-Kai" secondAttribute="bottom" constant="20" id="vuB-5H-srO"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="buttonContact" destination="2am-N2-pCf" id="fg0-yN-n1Q"/>
+                                            <outlet property="buttonDirection" destination="M2n-hn-8E7" id="r2g-i0-se7"/>
+                                            <outlet property="buttonWatsapp" destination="PkY-dL-Wrm" id="CMh-WL-WQg"/>
+                                            <outlet property="buttonWebsite" destination="KW9-si-Vvf" id="IjF-kY-48k"/>
+                                            <outlet property="labelSellerName" destination="suH-ei-Kai" id="bvY-0P-1xC"/>
+                                            <outlet property="labelStockLoad" destination="kk0-pF-p8R" id="bDz-Ks-ZAq"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="220" id="eyD-X3-OUK">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductRatingTableCell" rowHeight="220" id="eyD-X3-OUK" customClass="ProductRatingTableCell" customModule="Moyohak" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1213" width="414" height="220"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eyD-X3-OUK" id="va6-bz-lGY">
@@ -675,9 +712,10 @@
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gM7-s0-k6T">
                                                     <rect key="frame" x="206.5" y="69" width="1" height="135"/>
-                                                    <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="1" id="Cce-nS-50D"/>
+                                                        <constraint firstAttribute="height" constant="135" id="jAx-Gb-Czt"/>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6R-yM-YzX">
@@ -889,8 +927,33 @@
                                                 <constraint firstItem="KvR-SM-0eE" firstAttribute="top" secondItem="ptz-I8-rCu" secondAttribute="bottom" constant="18" id="wa9-qU-iv0"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="buttonRate" destination="hvW-Il-EUR" id="5L4-zR-uDo"/>
+                                            <outlet property="label1Star" destination="SLi-B8-aoF" id="sNU-Tb-GlE"/>
+                                            <outlet property="label2Star" destination="VGY-OG-u3E" id="iBT-bY-pJm"/>
+                                            <outlet property="label3Star" destination="Zju-07-HBB" id="vMg-Vd-sVp"/>
+                                            <outlet property="label4Star" destination="RBo-qY-kKo" id="0XU-7X-ZKd"/>
+                                            <outlet property="label5Star" destination="28T-Ho-3ti" id="kLs-au-TId"/>
+                                            <outlet property="labelComments" destination="cJa-No-FMh" id="sFo-ig-4qh"/>
+                                            <outlet property="labelRating" destination="KvR-SM-0eE" id="qWc-qw-7OS"/>
+                                            <outlet property="labelRatingPercent" destination="OVh-by-ggk" id="tJY-v8-WLy"/>
+                                            <outlet property="view1Star" destination="SLt-IJ-E2o" id="yuK-Rh-0cu"/>
+                                            <outlet property="view1StarInner" destination="aTL-Vv-CTQ" id="b3J-fq-7oe"/>
+                                            <outlet property="view2Star" destination="Z2y-j0-fi7" id="KVh-1D-1FF"/>
+                                            <outlet property="view2StarInner" destination="e1t-Wp-DBt" id="1fm-81-Rff"/>
+                                            <outlet property="view3Star" destination="TVc-lB-mtT" id="Wvf-1i-i2o"/>
+                                            <outlet property="view3StarInner" destination="MYv-mp-IHe" id="fro-J5-Fdp"/>
+                                            <outlet property="view4Star" destination="ZrI-L6-hk6" id="1zX-3H-Q6X"/>
+                                            <outlet property="view4StarInner" destination="Ex8-w0-iUI" id="TsC-2K-RAl"/>
+                                            <outlet property="view5Star" destination="Rgu-l9-T9o" id="KS3-RO-1jI"/>
+                                            <outlet property="view5StarInner" destination="rpH-dO-bBr" id="ViH-2h-LZI"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="C2j-zZ-SlW" id="7Ht-YJ-bR9"/>
+                                    <outlet property="delegate" destination="C2j-zZ-SlW" id="ncF-Ki-GxK"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2BM-42-jiE">
                                 <rect key="frame" x="0.0" y="806" width="414" height="56"/>
@@ -908,6 +971,9 @@
                                         <state key="normal" title="ADD TO CART">
                                             <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addToCartTappedWithSender:" destination="C2j-zZ-SlW" eventType="touchUpInside" id="mAF-fn-6nJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFb-2m-Hrz">
                                         <rect key="frame" x="207" y="0.0" width="207" height="56"/>
@@ -916,6 +982,9 @@
                                         <state key="normal" title="BUY NOW">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buyNowTappedWithSender:" destination="C2j-zZ-SlW" eventType="touchUpInside" id="Seh-si-L81"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxl-dA-Ty5" userLabel="Seperator">
                                         <rect key="frame" x="0.0" y="54" width="414" height="2"/>
@@ -958,6 +1027,9 @@
                         <viewLayoutGuide key="safeArea" id="Q2P-Ow-Div"/>
                     </view>
                     <navigationItem key="navigationItem" id="aGD-dz-hKP"/>
+                    <connections>
+                        <outlet property="tableV" destination="FgA-mS-SLU" id="KHV-Mz-voL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x81-nu-lxK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -984,7 +1056,7 @@
         <!--Navigation Controller-->
         <scene sceneID="PM9-Ah-zft">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w5A-XF-PSN" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ProductDetailsViewController_NC" automaticallyAdjustsScrollViewInsets="NO" id="w5A-XF-PSN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5k8-si-HyA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

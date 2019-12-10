@@ -64,4 +64,8 @@ extension ProductListViewViewController : UICollectionViewDelegate, UICollection
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        ProductViewModel.showProductDetails(navigationType: .Push, parentViewController: self)
+    }
+    
 }

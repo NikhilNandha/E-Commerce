@@ -60,5 +60,7 @@ struct NavigatorController {
     let ProductList = Storyboard().product.instantiateViewController(withIdentifier: "ProductListViewViewController") as! ProductListViewViewController
     let ProductListNC = Storyboard().product.instantiateViewController(withIdentifier: "ProductListViewViewController_NC") as! UINavigationController
     
+    let ProductDetails = Storyboard().product.instantiateViewController(withIdentifier: "ProductDetailsViewController") as! ProductDetailsViewController
+    let ProductDetailsNC = Storyboard().product.instantiateViewController(withIdentifier: "ProductDetailsViewController_NC") as! UINavigationController
     
 }

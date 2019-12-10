@@ -10,21 +10,68 @@ import UIKit
 
 class ProductDetailsViewController: UIViewController {
 
+    @IBOutlet var tableV: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        tableV.reloadData()
     }
-    */
+    
+    // MARK: - Button Tapped Events -
 
+    @IBAction func addToCartTapped(sender: UIButton) {
+        
+    }
+    
+    @IBAction func buyNowTapped(sender: UIButton) {
+        
+    }
+    
+}
+
+extension ProductDetailsViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return tableCellForIndexPath(tableView, indexPath: indexPath)
+    }
+    
+    func tableCellForIndexPath(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        
+        switch indexPath.row {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ProductImageTableCell", for: indexPath) as! ProductImageTableCell
+            
+            return cell
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ProductDetailsTableCell", for: indexPath) as! ProductDetailsTableCell
+            
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ProductDeliveryTableCell", for: indexPath) as! ProductDeliveryTableCell
+            
+            return cell
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ProductSellerTableCell", for: indexPath) as! ProductSellerTableCell
+            
+            return cell
+        case 4:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ProductRatingTableCell", for: indexPath) as! ProductRatingTableCell
+            
+            return cell
+        default:
+            return UITableViewCell()
+        }
+        
+    }
 }
