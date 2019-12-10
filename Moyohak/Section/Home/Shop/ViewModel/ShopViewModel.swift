@@ -7,7 +7,15 @@
 //
 
 import Foundation
+import UIKit
 
 class ShopViewModel {
+    
+    static func showCategories(navigationType: NavigationType, parentViewController: UIViewController) {
+        
+        ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().Categories : NavigatorController().CategoriesNC,
+                                      parentViewController: parentViewController,
+                                      navigationType: navigationType)
+    }
     
 }

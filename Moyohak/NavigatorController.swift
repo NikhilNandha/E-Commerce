@@ -55,6 +55,11 @@ struct NavigatorController {
     let Profile = Storyboard().profile.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
     let ProfileNC = Storyboard().profile.instantiateViewController(withIdentifier: "ProfileViewController_NC") as! UINavigationController
     
+    //MARK: - Categories & Search -
+    
+    let Categories = Storyboard().shop.instantiateViewController(withIdentifier: "ShopCategoriesViewController") as! ShopCategoriesViewController
+    let CategoriesNC = Storyboard().shop.instantiateViewController(withIdentifier: "ShopCategoriesViewController_NC") as! UINavigationController
+    
     //MARK: - Products -
     
     let ProductList = Storyboard().product.instantiateViewController(withIdentifier: "ProductListViewViewController") as! ProductListViewViewController

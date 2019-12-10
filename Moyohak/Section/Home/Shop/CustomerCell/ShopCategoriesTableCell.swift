@@ -44,4 +44,8 @@ extension ShopCategoriesTableCell : UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize.init(width: 85.0, height: 80.0)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        ShopViewModel.showCategories(navigationType: .Push, parentViewController: ViewNavigator.shared.currentViewController!)
+    }
 }
