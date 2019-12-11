@@ -1,5 +1,5 @@
 //
-//  ShopCategoriesViewController.swift
+//  SubCategoryTableCell.swift
 //  Moyohak
 //
 //  Created by Nikhil Nandha on 11/12/19.
@@ -8,55 +8,53 @@
 
 import UIKit
 
-class ShopCategoriesViewController: UIViewController {
+class SubCategoryTableCell: UITableViewCell {
 
+    @IBOutlet var labelName: UIView!
+    @IBOutlet var viewContainer: UIView!
     @IBOutlet var collectionV: UICollectionView!
+    @IBOutlet var collectionHeight: NSLayoutConstraint!
     
-    var cellHeight = 182.0
+    let cellHeight : Double = 130
+    let productsCount = 9
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
         
-        self.title = "All Categories"
+        viewContainer.layer.cornerRadius = 4.0
+        viewContainer.layer.borderColor = UIColor.ThemeLightGrey.cgColor
+        viewContainer.layer.borderWidth = 1.0
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
+    func configureCell(indexPath: IndexPath, data: [String: Any]) {
         collectionV.reloadData()
+        
+        let totalheight = (Int(cellHeight) * (productsCount/3)) + productsCount + 24
+        
+        collectionHeight.constant = CGFloat(totalheight)
+        self.layoutIfNeeded()
     }
 
-    /*
-    // MARK: - Navigation
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        // Configure the view for the selected state
     }
-    */
 
 }
 
-extension ShopCategoriesViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension SubCategoryTableCell : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return productsCount
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCollectionCell", for: indexPath) as! CategoriesCollectionCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SubCategoryCollectionCell", for: indexPath) as! SubCategoryCollectionCell
         
         return cell
     }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        ShopViewModel.showSubCategories(navigationType: .Push, parentViewController: self)
-    }
-    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize.init(width: Double((collectionView.bounds.width/3) - 12), height: cellHeight)
@@ -73,4 +71,5 @@ extension ShopCategoriesViewController: UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets.init(top: 8, left: 8, bottom: 8, right: 8)
     }
+    
 }

@@ -18,4 +18,10 @@ class ShopViewModel {
                                       navigationType: navigationType)
     }
     
+    static func showSubCategories(navigationType: NavigationType, parentViewController: UIViewController) {
+        
+        ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().SubCategories : NavigatorController().SubCategoriesNC,
+                                      parentViewController: parentViewController,
+                                      navigationType: navigationType)
+    }
 }

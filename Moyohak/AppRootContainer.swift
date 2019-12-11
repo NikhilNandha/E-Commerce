@@ -36,6 +36,7 @@ class AppRootContainer {
     static func setNavigationAppearances() {
         UINavigationBar.appearance().barTintColor = UIColor.ThemeColorPrimary
         UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font : UIFont.MuliBold(21), NSAttributedString.Key.foregroundColor : UIColor.white]
         UIBarButtonItem.appearance().setBackButtonBackgroundImage(#imageLiteral(resourceName: "Transparent"), for: .normal, barMetrics: .default)
     }
     

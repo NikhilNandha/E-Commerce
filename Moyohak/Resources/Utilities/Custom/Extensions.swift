@@ -19,6 +19,25 @@ extension UIColor {
     
 }
 
+extension UIFont {
+    
+    static func MuliRegular(_ size: Int) -> UIFont {
+        return UIFont.init(name: "MULI-REGULAR", size: CGFloat(size)) ?? UIFont.systemFont(ofSize: CGFloat(size))
+    }
+    
+    static func MuliSemiBold(_ size: Int) -> UIFont {
+        return UIFont.init(name: "MULI-SEMIBOLD", size: CGFloat(size)) ?? UIFont.systemFont(ofSize: CGFloat(size))
+    }
+    
+    static func MuliBold(_ size: Int) -> UIFont {
+        return UIFont.init(name: "MULI-BOLD", size: CGFloat(size)) ?? UIFont.systemFont(ofSize: CGFloat(size))
+    }
+    
+    static func MuliExtraBold(_ size: Int) -> UIFont {
+        return UIFont.init(name: "MULI-EXTRABOLD", size: CGFloat(size)) ?? UIFont.systemFont(ofSize: CGFloat(size))
+    }
+}
+
 extension UIView {
 
   // OUTPUT 1

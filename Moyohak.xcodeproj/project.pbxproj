@@ -75,6 +75,8 @@
 		0349CF7B238D79E80019860A /* SCP_SCNormal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0349CF76238D79E80019860A /* SCP_SCNormal.swift */; };
 		0349CF7C238D79E80019860A /* SCP_SCJAFillCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0349CF77238D79E80019860A /* SCP_SCJAFillCircle.swift */; };
 		0349CF7D238D79E80019860A /* SCPageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0349CF78238D79E80019860A /* SCPageControlView.swift */; };
+		0362DBC623A0BD2B0041D2B2 /* SubCategoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362DBC523A0BD2B0041D2B2 /* SubCategoryTableCell.swift */; };
+		0362DBC823A0BD440041D2B2 /* SubCategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362DBC723A0BD440041D2B2 /* SubCategoryCollectionCell.swift */; };
 		03AEBF72238D908D001CE765 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AEBF71238D908D001CE765 /* IntroViewController.swift */; };
 		03B8A7932393AE32004A86A9 /* ShopProductCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8A7922393AE32004A86A9 /* ShopProductCollectionCell.swift */; };
 		03B8A7952393AE87004A86A9 /* ShopCategoriesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8A7942393AE87004A86A9 /* ShopCategoriesTableCell.swift */; };
@@ -182,6 +184,8 @@
 		0349CF76238D79E80019860A /* SCP_SCNormal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCP_SCNormal.swift; sourceTree = "<group>"; };
 		0349CF77238D79E80019860A /* SCP_SCJAFillCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCP_SCJAFillCircle.swift; sourceTree = "<group>"; };
 		0349CF78238D79E80019860A /* SCPageControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCPageControlView.swift; sourceTree = "<group>"; };
+		0362DBC523A0BD2B0041D2B2 /* SubCategoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryTableCell.swift; sourceTree = "<group>"; };
+		0362DBC723A0BD440041D2B2 /* SubCategoryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryCollectionCell.swift; sourceTree = "<group>"; };
 		03AEBF71238D908D001CE765 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		03B8A7922393AE32004A86A9 /* ShopProductCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopProductCollectionCell.swift; sourceTree = "<group>"; };
 		03B8A7942393AE87004A86A9 /* ShopCategoriesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCategoriesTableCell.swift; sourceTree = "<group>"; };
@@ -434,6 +438,8 @@
 			isa = PBXGroup;
 			children = (
 				0342BA4323A01ED200DF135A /* CategoriesCollectionCell.swift */,
+				0362DBC523A0BD2B0041D2B2 /* SubCategoryTableCell.swift */,
+				0362DBC723A0BD440041D2B2 /* SubCategoryCollectionCell.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -874,6 +880,7 @@
 				0349CF5E238CE3C40019860A /* CustomTextfield.swift in Sources */,
 				03B8A7972393AEA6004A86A9 /* ShopBannerTableCell.swift in Sources */,
 				0349CEF5238801BF0019860A /* AppDelegate.swift in Sources */,
+				0362DBC823A0BD440041D2B2 /* SubCategoryCollectionCell.swift in Sources */,
 				0341927B2390214500ACF085 /* ShopViewController.swift in Sources */,
 				034192812390280E00ACF085 /* TabBar.swift in Sources */,
 				0349CF62238CE3C40019860A /* ViewNavigator.swift in Sources */,
@@ -895,6 +902,7 @@
 				0349CF5F238CE3C40019860A /* NavigatorController.swift in Sources */,
 				031DDE71239D374500CEF9B6 /* ProductDetailsViewController.swift in Sources */,
 				0349CF7D238D79E80019860A /* SCPageControlView.swift in Sources */,
+				0362DBC623A0BD2B0041D2B2 /* SubCategoryTableCell.swift in Sources */,
 				0342BA2D23982F2D00DF135A /* ProductsCollectionViewFlowLayout.swift in Sources */,
 				0349CF5C238CE3C40019860A /* SuperViewController.swift in Sources */,
 				034192872390420D00ACF085 /* QRCodeViewController.swift in Sources */,

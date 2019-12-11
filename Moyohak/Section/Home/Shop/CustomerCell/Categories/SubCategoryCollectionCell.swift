@@ -1,5 +1,5 @@
 //
-//  CategoriesCollectionCell.swift
+//  SubCategoryCollectionCell.swift
 //  Moyohak
 //
 //  Created by Nikhil Nandha on 11/12/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CategoriesCollectionCell: UICollectionViewCell {
+class SubCategoryCollectionCell: UICollectionViewCell {
     
     @IBOutlet var labelName: UILabel!
     @IBOutlet var imageView: UIImageView!
@@ -20,6 +20,5 @@ class CategoriesCollectionCell: UICollectionViewCell {
         
         viewContainer.layer.borderColor = UIColor.ThemeLightGrey.cgColor
         viewContainer.layer.borderWidth = 1.0
-        viewContainer.layer.cornerRadius = 4.0
     }
 }
