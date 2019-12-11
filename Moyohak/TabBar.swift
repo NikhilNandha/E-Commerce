@@ -57,7 +57,8 @@ class TabBar : NSObject, UITabBarControllerDelegate {
     }
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        print(viewController)
+        print("Selected View Controller -->" + "\(viewController)")
+        tabBarController.tabBar.isHidden = false
     }
     
 }

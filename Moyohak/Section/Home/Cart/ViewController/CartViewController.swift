@@ -19,6 +19,8 @@ class CartViewController: SuperViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.title = "Cart"
     }
     
     
@@ -29,13 +31,14 @@ class CartViewController: SuperViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.tabBarController?.tabBar.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-        self.tabBarController?.tabBar.isHidden = false
+        super.viewWillAppear(animated)
+        if self.tabBarController?.tabBar.isHidden ?? false {
+            self.tabBarController?.tabBar.isHidden = false
+        }
     }
     
     // MARK: - Button Tappped -

@@ -30,7 +30,9 @@ class ShopViewController: SuperViewController, UITextFieldDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-        self.tabBarController?.tabBar.isHidden = false
+        if self.tabBarController?.tabBar.isHidden ?? false {
+            self.tabBarController?.tabBar.isHidden = false
+        }
     }
     
     // MARK: - Button Tapped Methods -

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShopCategoriesViewController: UIViewController {
+class ShopCategoriesViewController: SuperViewController {
 
     @IBOutlet var collectionV: UICollectionView!
     

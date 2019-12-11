@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShopSubCategoriesViewController: UIViewController {
+class ShopSubCategoriesViewController: SuperViewController {
 
     @IBOutlet var tableV: UITableView!
     
