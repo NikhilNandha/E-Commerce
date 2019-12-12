@@ -61,11 +61,20 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
+        
         let data = ProfileViewModel.shared.dataArray[indexPath.section]
         let string = data[indexPath.row]
         
         cell.textLabel?.font = UIFont.MuliSemiBold(17)
         cell.textLabel?.text = string
+        cell.textLabel?.textColor = UIColor.ThemeTextDarkGrey
+        
+        if indexPath.section == 0 {
+            cell.imageView?.image = UIImage.init(named: "RadioDeselected")
+        }else {
+            cell.imageView?.image = nil
+        }
         
         return cell
     }
