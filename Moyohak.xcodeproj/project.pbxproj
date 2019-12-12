@@ -79,6 +79,8 @@
 		0362DBC823A0BD440041D2B2 /* SubCategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362DBC723A0BD440041D2B2 /* SubCategoryCollectionCell.swift */; };
 		03A5850C23A0F63E004A5961 /* CartProductTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5850B23A0F63E004A5961 /* CartProductTableCell.swift */; };
 		03A5850E23A0F660004A5961 /* CartDetailsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5850D23A0F660004A5961 /* CartDetailsTableCell.swift */; };
+		03A5851023A2167C004A5961 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5850F23A2167C004A5961 /* CheckoutViewController.swift */; };
+		03A5851223A2196F004A5961 /* CheckoutAddressTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5851123A2196F004A5961 /* CheckoutAddressTableCell.swift */; };
 		03AEBF72238D908D001CE765 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AEBF71238D908D001CE765 /* IntroViewController.swift */; };
 		03B8A7932393AE32004A86A9 /* ShopProductCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8A7922393AE32004A86A9 /* ShopProductCollectionCell.swift */; };
 		03B8A7952393AE87004A86A9 /* ShopCategoriesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8A7942393AE87004A86A9 /* ShopCategoriesTableCell.swift */; };
@@ -190,6 +192,8 @@
 		0362DBC723A0BD440041D2B2 /* SubCategoryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryCollectionCell.swift; sourceTree = "<group>"; };
 		03A5850B23A0F63E004A5961 /* CartProductTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProductTableCell.swift; sourceTree = "<group>"; };
 		03A5850D23A0F660004A5961 /* CartDetailsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDetailsTableCell.swift; sourceTree = "<group>"; };
+		03A5850F23A2167C004A5961 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		03A5851123A2196F004A5961 /* CheckoutAddressTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutAddressTableCell.swift; sourceTree = "<group>"; };
 		03AEBF71238D908D001CE765 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		03B8A7922393AE32004A86A9 /* ShopProductCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopProductCollectionCell.swift; sourceTree = "<group>"; };
 		03B8A7942393AE87004A86A9 /* ShopCategoriesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCategoriesTableCell.swift; sourceTree = "<group>"; };
@@ -356,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				034192A12390F1E200ACF085 /* CartViewController.swift */,
+				03A5850F23A2167C004A5961 /* CheckoutViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -647,6 +652,7 @@
 			children = (
 				03A5850B23A0F63E004A5961 /* CartProductTableCell.swift */,
 				03A5850D23A0F660004A5961 /* CartDetailsTableCell.swift */,
+				03A5851123A2196F004A5961 /* CheckoutAddressTableCell.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -885,6 +891,7 @@
 				0342BA4423A01ED200DF135A /* CategoriesCollectionCell.swift in Sources */,
 				03B8A79D2393BBAC004A86A9 /* ShopBannerCollectionCell.swift in Sources */,
 				0349CF59238CE3C40019860A /* LoginViewModel.swift in Sources */,
+				03A5851223A2196F004A5961 /* CheckoutAddressTableCell.swift in Sources */,
 				0342BA3D23A00E2200DF135A /* ProductDetailsImageCollectionCell.swift in Sources */,
 				03C94B2F238DA8FE00EDC851 /* ScrollContentView.swift in Sources */,
 				034192AE2390F24400ACF085 /* ProfileViewController.swift in Sources */,
@@ -905,6 +912,7 @@
 				0349CF7B238D79E80019860A /* SCP_SCNormal.swift in Sources */,
 				0342BA39239FFD8400DF135A /* ProductSellerTableCell.swift in Sources */,
 				0349CF7C238D79E80019860A /* SCP_SCJAFillCircle.swift in Sources */,
+				03A5851023A2167C004A5961 /* CheckoutViewController.swift in Sources */,
 				03B8A7952393AE87004A86A9 /* ShopCategoriesTableCell.swift in Sources */,
 				0349CF5D238CE3C40019860A /* Extensions.swift in Sources */,
 				0349CF7A238D79E80019860A /* SCP_SCJAFlatBar.swift in Sources */,

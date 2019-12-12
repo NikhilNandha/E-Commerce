@@ -1,58 +1,43 @@
 //
-//  CartViewController.swift
+//  CheckoutViewController.swift
 //  Moyohak
 //
-//  Created by Nikhil Nandha on 29/11/19.
+//  Created by Nikhil Nandha on 12/12/19.
 //  Copyright © 2019 Nikhil Nandha. All rights reserved.
 //
 
 import UIKit
 
-class CartViewController: SuperViewController {
+class CheckoutViewController: SuperViewController {
 
     @IBOutlet var tableV: UITableView!
-    
-    @IBOutlet var buttonAmount: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        self.title = "Cart"
+        self.title = "Checkout"
     }
-    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         tableV.reloadData()
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        self.tabBarController?.tabBar.isHidden = true
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        if self.tabBarController?.tabBar.isHidden ?? false {
-            self.tabBarController?.tabBar.isHidden = false
-        }
-    }
-    
-    // MARK: - Button Tappped -
 
-    @IBAction func placeOrderTapped(sender: UIButton) {
-        CartViewModel.showCheckoutScreen(navigationType: .Push, parentViewController: self)
-    }
+    
+    // MARK: - Button Tapped -
 
+    @IBAction func continueTapped(sender: UIButton) {
+        
+    }
 }
 
-extension CartViewController: UITableViewDataSource, UITableViewDelegate {
+extension CheckoutViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        3
+        4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -61,8 +46,12 @@ extension CartViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableCell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell{
         
-        if indexPath.row == 2 {
+        if indexPath.row == 3 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CartDetailsTableCell", for: indexPath) as! CartDetailsTableCell
+            
+            return cell
+        }else if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CheckoutAddressTableCell", for: indexPath) as! CheckoutAddressTableCell
             
             return cell
         }else {

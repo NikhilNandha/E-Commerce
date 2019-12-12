@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import UIKit
+
+class CartViewModel {
+    
+    static let shred = CartViewModel()
+    
+    static func showCheckoutScreen(navigationType: NavigationType, parentViewController: UIViewController) {
+        
+        ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().Checkout : NavigatorController().CheckoutNC,
+                                      parentViewController: parentViewController,
+                                      navigationType: navigationType)
+    }
+    
+    
+}
