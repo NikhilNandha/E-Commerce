@@ -50,13 +50,34 @@ extension PaymentViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableCell(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
+            
+            cell.textLabel?.font = UIFont.MuliSemiBold(17)
+            cell.textLabel?.text = CartViewModel.shared.tableArray[indexPath.row]
+            cell.textLabel?.textColor = UIColor.ThemeTextDarkGrey
+            cell.imageView?.image = UIImage.init(named: "RadioDeselected")
+                
             return cell
+            
         }else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CheckoutAddressTableCell", for: indexPath) as! CheckoutAddressTableCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CartDetailsTableCell", for: indexPath) as! CartDetailsTableCell
             
             return cell
         }
+    }
+        
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 {
+            return 64
+        }else {
+            return UITableView.automaticDimension
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
     }
 }
