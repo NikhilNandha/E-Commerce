@@ -9,13 +9,30 @@
 import Foundation
 import UIKit
 
+enum Payment: String {
+    case Card = "Credit / Debit / ATM Card"
+    case NetBanking = "Net Banking"
+    case COD = "Cash on Delivery"
+}
+
 class CartViewModel {
     
-    static let shred = CartViewModel()
+    static let shared = CartViewModel()
+    
+    var tableArray : [Payment.RawValue] {
+        return [Payment.Card.rawValue, Payment.NetBanking.rawValue, Payment.COD.rawValue]
+    }
     
     static func showCheckoutScreen(navigationType: NavigationType, parentViewController: UIViewController) {
         
         ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().Checkout : NavigatorController().CheckoutNC,
+                                      parentViewController: parentViewController,
+                                      navigationType: navigationType)
+    }
+    
+    static func showPaymentScreen(navigationType: NavigationType, parentViewController: UIViewController) {
+        
+        ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().Payment : NavigatorController().PaymentNC,
                                       parentViewController: parentViewController,
                                       navigationType: navigationType)
     }

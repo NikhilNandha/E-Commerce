@@ -76,4 +76,7 @@ struct NavigatorController {
     let Checkout = Storyboard().cart.instantiateViewController(withIdentifier: "CheckoutViewController") as! CheckoutViewController
     let CheckoutNC = Storyboard().cart.instantiateViewController(withIdentifier: "CheckoutViewController_NC") as! UINavigationController
     
+    let Payment = Storyboard().cart.instantiateViewController(withIdentifier: "PaymentViewController") as! PaymentViewController
+    let PaymentNC = Storyboard().cart.instantiateViewController(withIdentifier: "PaymentViewController_NC") as! UINavigationController
+    
 }

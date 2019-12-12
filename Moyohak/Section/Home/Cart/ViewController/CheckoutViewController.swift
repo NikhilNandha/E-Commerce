@@ -30,7 +30,7 @@ class CheckoutViewController: SuperViewController {
     // MARK: - Button Tapped -
 
     @IBAction func continueTapped(sender: UIButton) {
-        
+        CartViewModel.showPaymentScreen(navigationType: .Push, parentViewController: self)
     }
 }
 
