@@ -35,15 +35,7 @@ class ProfileViewController: SuperViewController {
         tableV.reloadData()
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
 
@@ -81,6 +73,23 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 64
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = ProfileViewModel.shared.dataArray[indexPath.section]
+        showProfieScreenFor(Profile(rawValue: data[indexPath.row])!)
+    }
+    
+    
+    func showProfieScreenFor(_ name: Profile) {
+        
+        switch name {
+        case Profile.MyAddresses:
+            ProfileViewModel.showAddressesScreen(navigationType: .Push, parentViewController: self)
+            break
+        default: break
+        }
+        
     }
     
 }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum Profile : String {
     case MyOrders = "My Orders", MyWishlist = "My Wishlist", MyCoupons = "My Coupons", MyReviews = "My Reviews", MyAddresses = "My Addresses"
@@ -22,6 +23,13 @@ class ProfileViewModel {
         return [[Profile.MyOrders.rawValue, Profile.MyWishlist.rawValue, Profile.MyCoupons.rawValue, Profile.MyReviews.rawValue, Profile.MyAddresses.rawValue],
                 [Profile.AccSettings.rawValue, Profile.NotifPref.rawValue, Profile.RateApp.rawValue, Profile.SendFeedback.rawValue],
                 [Profile.TermsAndCond.rawValue, Profile.PrivacyPolicy.rawValue, Profile.ReturnPolicy.rawValue, Profile.AboutUs.rawValue, Profile.FAQs.rawValue, Profile.Logout.rawValue]]
+    }
+    
+    static func showAddressesScreen(navigationType: NavigationType, parentViewController: UIViewController) {
+        
+        ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().Addresses : NavigatorController().AddressesNC,
+                                      parentViewController: parentViewController,
+                                      navigationType: navigationType)
     }
     
 }

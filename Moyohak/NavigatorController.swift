@@ -79,4 +79,10 @@ struct NavigatorController {
     let Payment = Storyboard().cart.instantiateViewController(withIdentifier: "PaymentViewController") as! PaymentViewController
     let PaymentNC = Storyboard().cart.instantiateViewController(withIdentifier: "PaymentViewController_NC") as! UINavigationController
     
+    
+    //MARK: - Profile -
+    
+    let Addresses = Storyboard().profile.instantiateViewController(withIdentifier: "AddressListViewController") as! AddressListViewController
+    let AddressesNC = Storyboard().profile.instantiateViewController(withIdentifier: "AddressListViewController_NC") as! UINavigationController
+    
 }
