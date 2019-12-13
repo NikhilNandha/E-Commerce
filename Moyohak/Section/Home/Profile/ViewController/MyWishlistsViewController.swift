@@ -16,19 +16,17 @@ class MyWishlistsViewController: SuperViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        configureData()
-    }
-    
-   override func viewDidAppear(_ animated: Bool) {
-       self.plotScren()
-   }
-   
-    private func configureData() {
-        
         self.title = "My Wishlists"
         
         collectionV.register(UINib.init(nibName: "ProductListCollectionCell", bundle: nil), forCellWithReuseIdentifier: "ProductListCollectionCell")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.configureData()
+        self.plotScren()
+    }
+   
+    private func configureData() {
         collectionV.collectionViewLayout = ProductsCollectionViewFlowLayout(collectionView: collectionV)
         
     }

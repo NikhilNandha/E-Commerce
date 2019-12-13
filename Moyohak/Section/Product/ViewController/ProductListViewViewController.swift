@@ -17,19 +17,16 @@ class ProductListViewViewController: SuperViewController {
 
         // Do any additional setup after loading the view.
         
-        
-        self.configureData()
+        productsCollectionView.register(UINib.init(nibName: "ProductListCollectionCell", bundle: nil), forCellWithReuseIdentifier: "ProductListCollectionCell")
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        self.configureData()
         self.plotScren()
     }
     
     private func configureData() {
-        productsCollectionView.register(UINib.init(nibName: "ProductListCollectionCell", bundle: nil), forCellWithReuseIdentifier: "ProductListCollectionCell")
-        
         productsCollectionView.collectionViewLayout = ProductsCollectionViewFlowLayout(collectionView: productsCollectionView)
-        
     }
     
     private func plotScren() {
