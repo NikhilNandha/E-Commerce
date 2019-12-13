@@ -82,6 +82,10 @@
 		03A5851023A2167C004A5961 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5850F23A2167C004A5961 /* CheckoutViewController.swift */; };
 		03A5851223A2196F004A5961 /* CheckoutAddressTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5851123A2196F004A5961 /* CheckoutAddressTableCell.swift */; };
 		03A5851423A23BA8004A5961 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5851323A23BA8004A5961 /* PaymentViewController.swift */; };
+		03A5851623A35E5D004A5961 /* AddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5851523A35E5D004A5961 /* AddAddressViewController.swift */; };
+		03A5851823A36549004A5961 /* MyOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5851723A36549004A5961 /* MyOrdersViewController.swift */; };
+		03A5851A23A375D7004A5961 /* OrdersTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5851923A375D7004A5961 /* OrdersTableCell.swift */; };
+		03A5851C23A3998A004A5961 /* MyWishlistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5851B23A3998A004A5961 /* MyWishlistsViewController.swift */; };
 		03A8325723A292DC00AAFD53 /* AddressDetailsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8325623A292DC00AAFD53 /* AddressDetailsTableCell.swift */; };
 		03A8325923A2944000AAFD53 /* AddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8325823A2944000AAFD53 /* AddressListViewController.swift */; };
 		03AEBF72238D908D001CE765 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AEBF71238D908D001CE765 /* IntroViewController.swift */; };
@@ -198,6 +202,10 @@
 		03A5850F23A2167C004A5961 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		03A5851123A2196F004A5961 /* CheckoutAddressTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutAddressTableCell.swift; sourceTree = "<group>"; };
 		03A5851323A23BA8004A5961 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		03A5851523A35E5D004A5961 /* AddAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressViewController.swift; sourceTree = "<group>"; };
+		03A5851723A36549004A5961 /* MyOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersViewController.swift; sourceTree = "<group>"; };
+		03A5851923A375D7004A5961 /* OrdersTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableCell.swift; sourceTree = "<group>"; };
+		03A5851B23A3998A004A5961 /* MyWishlistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWishlistsViewController.swift; sourceTree = "<group>"; };
 		03A8325623A292DC00AAFD53 /* AddressDetailsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailsTableCell.swift; sourceTree = "<group>"; };
 		03A8325823A2944000AAFD53 /* AddressListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListViewController.swift; sourceTree = "<group>"; };
 		03AEBF71238D908D001CE765 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
@@ -418,6 +426,9 @@
 			children = (
 				034192AD2390F24400ACF085 /* ProfileViewController.swift */,
 				03A8325823A2944000AAFD53 /* AddressListViewController.swift */,
+				03A5851523A35E5D004A5961 /* AddAddressViewController.swift */,
+				03A5851723A36549004A5961 /* MyOrdersViewController.swift */,
+				03A5851B23A3998A004A5961 /* MyWishlistsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -670,6 +681,7 @@
 			isa = PBXGroup;
 			children = (
 				03A8325623A292DC00AAFD53 /* AddressDetailsTableCell.swift */,
+				03A5851923A375D7004A5961 /* OrdersTableCell.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -902,6 +914,7 @@
 				03C32F0E239788CA004DEE4E /* ProductViewModel.swift in Sources */,
 				03C32F10239788EB004DEE4E /* ProductListViewViewController.swift in Sources */,
 				0342BA4123A01D1600DF135A /* ShopSubCategoriesViewController.swift in Sources */,
+				03A5851623A35E5D004A5961 /* AddAddressViewController.swift in Sources */,
 				034192AA2390F22000ACF085 /* OffersViewModel.swift in Sources */,
 				0341928523903C0000ACF085 /* AppRootContainer.swift in Sources */,
 				0342BA37239FFD3500DF135A /* ProductDeliveryTableCell.swift in Sources */,
@@ -911,6 +924,7 @@
 				0349CF59238CE3C40019860A /* LoginViewModel.swift in Sources */,
 				03A5851223A2196F004A5961 /* CheckoutAddressTableCell.swift in Sources */,
 				0342BA3D23A00E2200DF135A /* ProductDetailsImageCollectionCell.swift in Sources */,
+				03A5851A23A375D7004A5961 /* OrdersTableCell.swift in Sources */,
 				03C94B2F238DA8FE00EDC851 /* ScrollContentView.swift in Sources */,
 				034192AE2390F24400ACF085 /* ProfileViewController.swift in Sources */,
 				03A8325923A2944000AAFD53 /* AddressListViewController.swift in Sources */,
@@ -921,6 +935,7 @@
 				0349CF5E238CE3C40019860A /* CustomTextfield.swift in Sources */,
 				03B8A7972393AEA6004A86A9 /* ShopBannerTableCell.swift in Sources */,
 				0349CEF5238801BF0019860A /* AppDelegate.swift in Sources */,
+				03A5851C23A3998A004A5961 /* MyWishlistsViewController.swift in Sources */,
 				0362DBC823A0BD440041D2B2 /* SubCategoryCollectionCell.swift in Sources */,
 				0341927B2390214500ACF085 /* ShopViewController.swift in Sources */,
 				03A5850E23A0F660004A5961 /* CartDetailsTableCell.swift in Sources */,
@@ -929,6 +944,7 @@
 				0327654B238ED5E4007ECAB8 /* ForgotPasswordViewController.swift in Sources */,
 				0342BA31239FFC9000DF135A /* ProductImageTableCell.swift in Sources */,
 				0349CF7B238D79E80019860A /* SCP_SCNormal.swift in Sources */,
+				03A5851823A36549004A5961 /* MyOrdersViewController.swift in Sources */,
 				0342BA39239FFD8400DF135A /* ProductSellerTableCell.swift in Sources */,
 				0349CF7C238D79E80019860A /* SCP_SCJAFillCircle.swift in Sources */,
 				03A5851023A2167C004A5961 /* CheckoutViewController.swift in Sources */,

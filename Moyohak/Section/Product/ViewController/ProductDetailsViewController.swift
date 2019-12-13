@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProductDetailsViewController: UIViewController {
+class ProductDetailsViewController: SuperViewController {
 
     @IBOutlet var tableV: UITableView!
     

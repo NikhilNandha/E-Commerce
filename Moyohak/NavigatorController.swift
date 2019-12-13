@@ -85,4 +85,13 @@ struct NavigatorController {
     let Addresses = Storyboard().profile.instantiateViewController(withIdentifier: "AddressListViewController") as! AddressListViewController
     let AddressesNC = Storyboard().profile.instantiateViewController(withIdentifier: "AddressListViewController_NC") as! UINavigationController
     
+    let AddAddresses = Storyboard().profile.instantiateViewController(withIdentifier: "AddAddressViewController") as! AddAddressViewController
+    let AddAddressesNC = Storyboard().profile.instantiateViewController(withIdentifier: "AddAddressViewController_NC") as! UINavigationController
+    
+    let MyOrders = Storyboard().profile.instantiateViewController(withIdentifier: "MyOrdersViewController") as! MyOrdersViewController
+    let MyOrdersNC = Storyboard().profile.instantiateViewController(withIdentifier: "MyOrdersViewController_NC") as! UINavigationController
+    
+    let MyWishlist = Storyboard().profile.instantiateViewController(withIdentifier: "MyWishlistsViewController") as! MyWishlistsViewController
+    let MyWishlistNC = Storyboard().profile.instantiateViewController(withIdentifier: "MyWishlistsViewController_NC") as! UINavigationController
+    
 }

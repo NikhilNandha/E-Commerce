@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddressListViewController: UIViewController {
+class AddressListViewController: SuperViewController {
 
     @IBOutlet var tableV: UITableView!
     @IBOutlet var buttonHeight: NSLayoutConstraint!
@@ -29,7 +29,7 @@ class AddressListViewController: UIViewController {
     // MARK: - Button Tapped Events -
 
     @IBAction func addAddressTapped(sender: UIButton) {
-        
+        ProfileViewModel.showAddAddressesScreen(navigationType: .Push, parentViewController: self)
     }
     
 }

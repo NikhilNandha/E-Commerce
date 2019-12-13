@@ -87,6 +87,12 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
         case Profile.MyAddresses:
             ProfileViewModel.showAddressesScreen(navigationType: .Push, parentViewController: self)
             break
+        case Profile.MyOrders:
+            ProfileViewModel.showMyOrdersScreen(navigationType: .Push, parentViewController: self)
+            break
+        case Profile.MyWishlist:
+            ProfileViewModel.showMyWishlistScreen(navigationType: .Push, parentViewController: self)
+            break
         default: break
         }
         

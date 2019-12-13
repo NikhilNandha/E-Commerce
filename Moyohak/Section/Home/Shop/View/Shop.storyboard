@@ -249,15 +249,15 @@
                                             <outlet property="viewPaging" destination="zjL-V1-Jia" id="rG6-Lq-94l"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShopProductTableCell" rowHeight="494" id="lus-Sn-Ev2" customClass="ShopProductTableCell" customModule="Moyohak" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="294" width="414" height="494"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShopProductTableCell" rowHeight="499" id="lus-Sn-Ev2" customClass="ShopProductTableCell" customModule="Moyohak" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="294" width="414" height="499"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lus-Sn-Ev2" id="mNG-gz-qDt">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="494"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="499"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uEy-ku-uRU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="494"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="499"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deals Of The Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRE-eA-HEY">
                                                             <rect key="frame" x="16" y="24" width="178.5" height="26.5"/>
@@ -385,7 +385,7 @@
                                                         <constraint firstItem="A0q-PR-6xl" firstAttribute="leading" secondItem="bRE-eA-HEY" secondAttribute="leading" id="ZpH-7K-Kxa"/>
                                                         <constraint firstItem="cnT-LG-CWL" firstAttribute="trailing" secondItem="bPI-LD-2j5" secondAttribute="trailing" id="bIz-lX-fhJ"/>
                                                         <constraint firstAttribute="trailing" secondItem="bPI-LD-2j5" secondAttribute="trailing" constant="16" id="qfC-Oq-gj2"/>
-                                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cnT-LG-CWL" secondAttribute="bottom" id="ueV-B9-43A"/>
+                                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cnT-LG-CWL" secondAttribute="bottom" constant="5" id="ueV-B9-43A"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>

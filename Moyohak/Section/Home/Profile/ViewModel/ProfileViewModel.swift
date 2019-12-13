@@ -25,9 +25,36 @@ class ProfileViewModel {
                 [Profile.TermsAndCond.rawValue, Profile.PrivacyPolicy.rawValue, Profile.ReturnPolicy.rawValue, Profile.AboutUs.rawValue, Profile.FAQs.rawValue, Profile.Logout.rawValue]]
     }
     
+    
+}
+
+
+extension ProfileViewModel {
+    
     static func showAddressesScreen(navigationType: NavigationType, parentViewController: UIViewController) {
         
         ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().Addresses : NavigatorController().AddressesNC,
+                                      parentViewController: parentViewController,
+                                      navigationType: navigationType)
+    }
+    
+    static func showAddAddressesScreen(navigationType: NavigationType, parentViewController: UIViewController) {
+        
+        ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().AddAddresses : NavigatorController().AddAddressesNC,
+                                      parentViewController: parentViewController,
+                                      navigationType: navigationType)
+    }
+    
+    static func showMyOrdersScreen(navigationType: NavigationType, parentViewController: UIViewController) {
+        
+        ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().MyOrders : NavigatorController().MyOrdersNC,
+                                      parentViewController: parentViewController,
+                                      navigationType: navigationType)
+    }
+    
+    static func showMyWishlistScreen(navigationType: NavigationType, parentViewController: UIViewController) {
+        
+        ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().MyWishlist : NavigatorController().MyWishlistNC,
                                       parentViewController: parentViewController,
                                       navigationType: navigationType)
     }

@@ -26,6 +26,10 @@ class ShopProductTableCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        buttonViewAll.layer.cornerRadius = 4.0
+        buttonViewAll.layer.borderWidth = 1.0
+        buttonViewAll.layer.borderColor = UIColor.ThemeTextDarkGrey.cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -41,6 +45,16 @@ class ShopProductTableCell: UITableViewCell {
         
         collectionHeight.constant = CGFloat(totalheight)
         self.layoutIfNeeded()
+        
+        if indexPath.row%2 == 0 {
+            labelTitle.textColor = UIColor.white
+            labelDetail.textColor = UIColor.white
+            viewContainer.backgroundColor = UIColor.ThemeColorPrimary
+        }else {
+            labelTitle.textColor = UIColor.ThemeTextDarkGrey
+            labelDetail.textColor = UIColor.ThemeTextDarkGrey
+            viewContainer.backgroundColor = UIColor.init(red: 245.0/255.0, green: 245.0/255.0, blue: 245.0/255.0, alpha: 1.0)
+        }
     }
     
 }
