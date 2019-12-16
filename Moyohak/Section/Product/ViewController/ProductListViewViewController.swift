@@ -30,7 +30,6 @@ class ProductListViewViewController: SuperViewController {
     }
     
     private func plotScren() {
-        
         productsCollectionView.reloadData()
     }
     
@@ -41,7 +40,7 @@ class ProductListViewViewController: SuperViewController {
     }
     
     @IBAction func filterButtonTapped(sender: UIButton) {
-        
+        ProductViewModel.showFilterScreen(navigationType: .Push, parentViewController: self)
     }
 
 }

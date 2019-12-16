@@ -77,6 +77,9 @@ struct NavigatorController {
     let RateProduct = Storyboard().product.instantiateViewController(withIdentifier: "RateProductViewController") as! RateProductViewController
     let RateProductNC = Storyboard().product.instantiateViewController(withIdentifier: "RateProductViewController_NC") as! UINavigationController
     
+    let Filter = Storyboard().product.instantiateViewController(withIdentifier: "FilterProductViewController") as! FilterProductViewController
+    let FilterNC = Storyboard().product.instantiateViewController(withIdentifier: "FilterProductViewController_NC") as! UINavigationController
+    
     //MARK: - Cart & Checkout -
     
     let Checkout = Storyboard().cart.instantiateViewController(withIdentifier: "CheckoutViewController") as! CheckoutViewController

@@ -42,6 +42,9 @@
 		0342BA4123A01D1600DF135A /* ShopSubCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0342BA4023A01D1600DF135A /* ShopSubCategoriesViewController.swift */; };
 		0342BA4423A01ED200DF135A /* CategoriesCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0342BA4323A01ED200DF135A /* CategoriesCollectionCell.swift */; };
 		034388C823A7A4CF00554426 /* RateProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034388C723A7A4CF00554426 /* RateProductViewController.swift */; };
+		034388CA23A7CFC000554426 /* FilterProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034388C923A7CFC000554426 /* FilterProductViewController.swift */; };
+		034388CD23A7D06900554426 /* FilterCategoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034388CC23A7D06900554426 /* FilterCategoryTableCell.swift */; };
+		034388CF23A7D08500554426 /* FilterSubCategoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034388CE23A7D08500554426 /* FilterSubCategoryTableCell.swift */; };
 		0349CEF5238801BF0019860A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0349CEF4238801BF0019860A /* AppDelegate.swift */; };
 		0349CEFC238801BF0019860A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0349CEFA238801BF0019860A /* Main.storyboard */; };
 		0349CEFE238801C80019860A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0349CEFD238801C80019860A /* Assets.xcassets */; };
@@ -159,6 +162,9 @@
 		0342BA4023A01D1600DF135A /* ShopSubCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSubCategoriesViewController.swift; sourceTree = "<group>"; };
 		0342BA4323A01ED200DF135A /* CategoriesCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionCell.swift; sourceTree = "<group>"; };
 		034388C723A7A4CF00554426 /* RateProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateProductViewController.swift; sourceTree = "<group>"; };
+		034388C923A7CFC000554426 /* FilterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProductViewController.swift; sourceTree = "<group>"; };
+		034388CC23A7D06900554426 /* FilterCategoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCategoryTableCell.swift; sourceTree = "<group>"; };
+		034388CE23A7D08500554426 /* FilterSubCategoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSubCategoryTableCell.swift; sourceTree = "<group>"; };
 		0349CEF1238801BF0019860A /* Moyohak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moyohak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0349CEF4238801BF0019860A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0349CEFB238801BF0019860A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -481,6 +487,15 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		034388CB23A7D04600554426 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				034388CC23A7D06900554426 /* FilterCategoryTableCell.swift */,
+				034388CE23A7D08500554426 /* FilterSubCategoryTableCell.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
 		0349CEE8238801BF0019860A = {
 			isa = PBXGroup;
 			children = (
@@ -741,6 +756,7 @@
 				031DDE70239D374500CEF9B6 /* ProductDetailsViewController.swift */,
 				03A5851D23A536AD004A5961 /* ProductDetailsDescriptionViewController.swift */,
 				034388C723A7A4CF00554426 /* RateProductViewController.swift */,
+				034388C923A7CFC000554426 /* FilterProductViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -748,6 +764,7 @@
 		03C32F112397AB58004DEE4E /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
+				034388CB23A7D04600554426 /* Filter */,
 				0342BA2F239FFC5100DF135A /* ProductList */,
 				0342BA2E239FFC4500DF135A /* ProductDetails */,
 			);
@@ -944,6 +961,7 @@
 				0341927D2390215D00ACF085 /* ShopViewModel.swift in Sources */,
 				0349CF5E238CE3C40019860A /* CustomTextfield.swift in Sources */,
 				03B8A7972393AEA6004A86A9 /* ShopBannerTableCell.swift in Sources */,
+				034388CD23A7D06900554426 /* FilterCategoryTableCell.swift in Sources */,
 				0349CEF5238801BF0019860A /* AppDelegate.swift in Sources */,
 				03A5851C23A3998A004A5961 /* MyWishlistsViewController.swift in Sources */,
 				0362DBC823A0BD440041D2B2 /* SubCategoryCollectionCell.swift in Sources */,
@@ -960,6 +978,8 @@
 				0349CF7C238D79E80019860A /* SCP_SCJAFillCircle.swift in Sources */,
 				03A5851023A2167C004A5961 /* CheckoutViewController.swift in Sources */,
 				03B8A7952393AE87004A86A9 /* ShopCategoriesTableCell.swift in Sources */,
+				034388CF23A7D08500554426 /* FilterSubCategoryTableCell.swift in Sources */,
+				034388CA23A7CFC000554426 /* FilterProductViewController.swift in Sources */,
 				0349CF5D238CE3C40019860A /* Extensions.swift in Sources */,
 				0349CF7A238D79E80019860A /* SCP_SCJAFlatBar.swift in Sources */,
 				03A5852023A75DE1004A5961 /* ProductSpecificationTableCell.swift in Sources */,
@@ -1158,15 +1178,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HWVQ338U2L;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Moyohak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moyohak.user;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1176,15 +1197,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HWVQ338U2L;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Moyohak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moyohak.user;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

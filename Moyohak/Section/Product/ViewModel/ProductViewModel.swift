@@ -39,4 +39,10 @@ class ProductViewModel {
                                       navigationType: navigationType)
     }
     
+    static func showFilterScreen(navigationType: NavigationType, parentViewController: UIViewController) {
+        
+        ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().Filter : NavigatorController().FilterNC,
+                                      parentViewController: parentViewController,
+                                      navigationType: navigationType)
+    }
 }
