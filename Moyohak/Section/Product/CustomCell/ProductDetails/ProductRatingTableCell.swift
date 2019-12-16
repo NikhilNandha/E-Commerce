@@ -36,6 +36,9 @@ class ProductRatingTableCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        buttonRate.layer.cornerRadius = 4.0
+        buttonRate.dropShadow(color: UIColor.ThemeLightGrey, offSet: CGSize(width: -0.5, height: 0.5))
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

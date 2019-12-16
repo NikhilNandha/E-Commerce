@@ -34,6 +34,14 @@ class ProductDetailsViewController: SuperViewController {
         
     }
     
+    @IBAction func productDetailsTapped(sender: UIButton) {
+        ProductViewModel.showProductDescription(navigationType: .Push, parentViewController: self)
+    }
+    
+    @IBAction func rateProductTapped(sender: UIButton) {
+        ProductViewModel.showRateProductScreen(navigationType: .Push, parentViewController: self)
+    }
+    
 }
 
 extension ProductDetailsViewController: UITableViewDelegate, UITableViewDataSource {

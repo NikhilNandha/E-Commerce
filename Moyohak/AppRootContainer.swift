@@ -36,6 +36,12 @@ class AppRootContainer {
     static func setNavigationAppearances() {
         UINavigationBar.appearance().barTintColor = UIColor.ThemeColorPrimary
         UINavigationBar.appearance().tintColor = UIColor.white
+        
+        //Removes think black line at bottom from navigation bar
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        
+        
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font : UIFont.MuliBold(21), NSAttributedString.Key.foregroundColor : UIColor.white]
         UIBarButtonItem.appearance().setBackButtonBackgroundImage(#imageLiteral(resourceName: "Transparent"), for: .normal, barMetrics: .default)
     }

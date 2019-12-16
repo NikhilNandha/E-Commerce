@@ -25,4 +25,18 @@ class ProductViewModel {
                                       navigationType: navigationType)
     }
     
+    static func showProductDescription(navigationType: NavigationType, parentViewController: UIViewController) {
+        
+        ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().ProductDescription : NavigatorController().ProductDescriptionNC,
+                                      parentViewController: parentViewController,
+                                      navigationType: navigationType)
+    }
+    
+    static func showRateProductScreen(navigationType: NavigationType, parentViewController: UIViewController) {
+        
+        ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().RateProduct : NavigatorController().RateProductNC,
+                                      parentViewController: parentViewController,
+                                      navigationType: navigationType)
+    }
+    
 }
