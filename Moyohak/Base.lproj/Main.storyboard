@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h9h-rS-pVN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h9h-rS-pVN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -169,7 +169,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4mJ-eA-EDV" customClass="CustomTextField" customModule="Moyohak" customModuleProvider="target">
                                         <rect key="frame" x="20" y="5" width="310" height="50"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -210,20 +210,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gq6-Lf-0d3">
-                                <rect key="frame" x="80.5" y="644" width="253" height="34"/>
+                                <rect key="frame" x="83.5" y="644" width="247" height="32.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Don't have an account?">
+                                        <fragment content="Don't have an account? ">
                                             <attributes>
                                                 <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="17" name="Muli-Light"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content=" ">
-                                            <attributes>
-                                                <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="17" name="Muli-Regular"/>
+                                                <font key="NSFont" metaFont="system" size="17"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -231,7 +224,7 @@
                                             <attributes>
                                                 <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="17" name="Muli-Bold"/>
+                                                <font key="NSFont" metaFont="system" size="17"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -347,7 +340,7 @@
                                         <rect key="frame" x="20" y="5" width="310" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -365,7 +358,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8RK-jK-ZjZ" customClass="CustomTextField" customModule="Moyohak" customModuleProvider="target">
                                         <rect key="frame" x="20" y="5" width="310" height="50"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -396,20 +389,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B7j-Hp-OJk">
-                                <rect key="frame" x="82" y="644" width="250" height="34"/>
+                                <rect key="frame" x="85.5" y="644" width="243" height="32.5"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Already have an account?">
+                                        <fragment content="Already have an account? ">
                                             <attributes>
                                                 <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="17" name="Muli-Light"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content=" ">
-                                            <attributes>
-                                                <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="17" name="Muli-Regular"/>
+                                                <font key="NSFont" metaFont="system" size="17"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -417,7 +403,7 @@
                                             <attributes>
                                                 <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="17" name="Muli-Bold"/>
+                                                <font key="NSFont" metaFont="system" size="17"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -509,13 +495,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have sent you the SMS with code to number +91 9833956848" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47A-et-FoE">
-                                <rect key="frame" x="40" y="188" width="334" height="48"/>
-                                <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="19"/>
+                                <rect key="frame" x="40" y="188" width="334" height="43"/>
+                                <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="17"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIL-4y-5sV">
-                                <rect key="frame" x="46" y="303" width="322" height="70"/>
+                                <rect key="frame" x="46" y="298" width="322" height="70"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iaa-gD-jhm">
                                         <rect key="frame" x="10" y="5" width="60.5" height="60"/>
@@ -669,7 +655,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmx-lP-GCa">
-                                <rect key="frame" x="208" y="381" width="150" height="38"/>
+                                <rect key="frame" x="208" y="376" width="150" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="VRB-Na-MPk"/>
                                     <constraint firstAttribute="height" constant="38" id="k4O-cW-fBq"/>
@@ -683,7 +669,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPa-KZ-L3k">
-                                <rect key="frame" x="177" y="464" width="60" height="60"/>
+                                <rect key="frame" x="177" y="459" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.49803921569999998" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="gw2-Xg-scS"/>
@@ -790,6 +776,25 @@
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drg-cx-9q3">
+                                <rect key="frame" x="32" y="288" width="350" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAy-yR-fAz" customClass="CustomTextField" customModule="Moyohak" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="5" width="310" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FAy-yR-fAz" firstAttribute="top" secondItem="drg-cx-9q3" secondAttribute="top" constant="5" id="5ly-6y-7PL"/>
+                                    <constraint firstItem="FAy-yR-fAz" firstAttribute="leading" secondItem="drg-cx-9q3" secondAttribute="leading" constant="20" id="MuU-gn-xMi"/>
+                                    <constraint firstAttribute="bottom" secondItem="FAy-yR-fAz" secondAttribute="bottom" constant="5" id="rzb-HX-RiV"/>
+                                    <constraint firstAttribute="trailing" secondItem="FAy-yR-fAz" secondAttribute="trailing" constant="20" id="uJr-OP-4KF"/>
+                                    <constraint firstAttribute="height" constant="60" id="wNI-lq-n4m"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2W8-fv-r9g">
                                 <rect key="frame" x="32" y="288" width="350" height="60"/>
                                 <subviews>
@@ -797,7 +802,7 @@
                                         <rect key="frame" x="20" y="5" width="310" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -810,15 +815,18 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNS-UQ-tC1">
-                                <rect key="frame" x="232" y="370" width="150" height="38"/>
+                                <rect key="frame" x="233" y="370" width="149" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="7au-A7-eZ2"/>
-                                    <constraint firstAttribute="width" constant="150" id="b3x-JO-qNe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="15"/>
                                 <state key="normal" title="Reset Through Email">
                                     <color key="titleColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <state key="selected" title="Reset Through Mobile Number"/>
+                                <connections>
+                                    <action selector="changeTypeTappedWithSender:" destination="hBU-30-iDF" eventType="touchUpInside" id="LAu-JX-a5e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2T-Uw-QNh">
                                 <rect key="frame" x="177" y="453" width="60" height="60"/>
@@ -843,8 +851,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="GhJ-36-glt" firstAttribute="top" secondItem="zkj-iY-zRP" secondAttribute="bottom" constant="8.5" id="4F2-M1-e3X"/>
+                            <constraint firstItem="drg-cx-9q3" firstAttribute="top" secondItem="2W8-fv-r9g" secondAttribute="top" id="4QX-8T-xvu"/>
                             <constraint firstItem="2W8-fv-r9g" firstAttribute="leading" secondItem="PVm-BP-8nl" secondAttribute="leading" constant="32" id="BdV-qd-xHt"/>
+                            <constraint firstItem="drg-cx-9q3" firstAttribute="trailing" secondItem="2W8-fv-r9g" secondAttribute="trailing" id="DlU-88-TfM"/>
                             <constraint firstItem="XCw-S3-tdM" firstAttribute="top" secondItem="GhJ-36-glt" secondAttribute="bottom" constant="18" id="HYa-dR-U8X"/>
+                            <constraint firstItem="drg-cx-9q3" firstAttribute="bottom" secondItem="2W8-fv-r9g" secondAttribute="bottom" id="Llr-Nx-mZa"/>
+                            <constraint firstItem="drg-cx-9q3" firstAttribute="leading" secondItem="2W8-fv-r9g" secondAttribute="leading" id="MT3-dh-ZXF"/>
                             <constraint firstItem="GhJ-36-glt" firstAttribute="centerX" secondItem="IVe-uO-C40" secondAttribute="centerX" id="PlT-sF-tGS"/>
                             <constraint firstItem="O2T-Uw-QNh" firstAttribute="top" secondItem="HNS-UQ-tC1" secondAttribute="bottom" constant="45" id="RWV-g0-AhX"/>
                             <constraint firstItem="zkj-iY-zRP" firstAttribute="top" secondItem="PVm-BP-8nl" secondAttribute="top" constant="10" id="SVB-9i-BnO"/>
@@ -866,7 +878,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="GVE-vk-FHV"/>
                     <connections>
+                        <outlet property="buttonChangeType" destination="HNS-UQ-tC1" id="9ay-VY-9lS"/>
+                        <outlet property="textfieldEmail" destination="FAy-yR-fAz" id="eQy-Cb-dyc"/>
                         <outlet property="textfieldMobileNumber" destination="eKI-Pv-nEW" id="di2-9c-0Of"/>
+                        <outlet property="viewEmail" destination="drg-cx-9q3" id="V5K-YD-Og3"/>
                         <outlet property="viewMobileNumber" destination="2W8-fv-r9g" id="fQ4-aZ-bFr"/>
                     </connections>
                 </viewController>
