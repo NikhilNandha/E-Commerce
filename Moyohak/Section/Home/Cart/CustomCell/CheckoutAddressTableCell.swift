@@ -27,4 +27,8 @@ class CheckoutAddressTableCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func addAddressTapped(sender: UIButton) {
+        ProfileViewModel.showAddressesScreen(navigationType: .Push, parentViewController: ViewNavigator.shared.currentViewController!)
+    }
+    
 }

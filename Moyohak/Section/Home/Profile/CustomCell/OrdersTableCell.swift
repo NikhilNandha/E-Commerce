@@ -28,6 +28,8 @@ class OrdersTableCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
+        imageViewStatus.layer.cornerRadius = 5
+        
         imageViewProduct.layer.borderWidth = 1.0
         imageViewProduct.layer.borderColor = UIColor.ThemeLightGrey.cgColor
         

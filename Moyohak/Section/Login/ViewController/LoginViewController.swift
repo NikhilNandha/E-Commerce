@@ -28,6 +28,10 @@ class LoginViewController: SuperViewController {
         plotScreen()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
+    
     private func plotScreen() {
         viewEmail.layer.cornerRadius = 8.0
         viewPassword.layer.cornerRadius = 8.0
@@ -47,5 +51,15 @@ class LoginViewController: SuperViewController {
     
     @IBAction func forgotPasswordButtonTapped(sender: UIButton) {
         LoginViewModel.showForgotPasswordScreen(navigationType: .Push, parentViewController: self)
+    }
+    
+    @IBAction func showPasswordTapped(sender: UIButton) {
+        if sender.isSelected {
+            sender.isSelected = false
+            textfieldPassword.isSecureTextEntry = true
+        }else {
+            sender.isSelected = true
+            textfieldPassword.isSecureTextEntry = false
+        }
     }
 }

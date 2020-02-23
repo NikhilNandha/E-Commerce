@@ -23,6 +23,13 @@ class CartViewModel {
         return [Payment.Card.rawValue, Payment.NetBanking.rawValue, Payment.COD.rawValue]
     }
     
+    static func showCartScreen(navigationType: NavigationType, parentViewController: UIViewController) {
+        
+        ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().Cart : NavigatorController().CartNC,
+                                      parentViewController: parentViewController,
+                                      navigationType: navigationType)
+    }
+    
     static func showCheckoutScreen(navigationType: NavigationType, parentViewController: UIViewController) {
         
         ViewNavigator.shared.navigate(viewController: navigationType == .Push ? NavigatorController().Checkout : NavigatorController().CheckoutNC,

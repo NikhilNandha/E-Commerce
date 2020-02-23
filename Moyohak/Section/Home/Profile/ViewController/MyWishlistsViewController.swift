@@ -21,8 +21,11 @@ class MyWishlistsViewController: SuperViewController {
         collectionV.register(UINib.init(nibName: "ProductListCollectionCell", bundle: nil), forCellWithReuseIdentifier: "ProductListCollectionCell")
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillLayoutSubviews() {
         self.configureData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         self.plotScren()
     }
    

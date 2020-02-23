@@ -31,5 +31,8 @@ class AddressDetailsTableCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    @IBAction func editTapped(sender: UIButton) {
+        ProfileViewModel.showAddAddressesScreen(navigationType: .Push, parentViewController: ViewNavigator.shared.currentViewController!)
+    }
 }

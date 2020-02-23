@@ -35,8 +35,6 @@ class ProductDetailsDescriptionViewController: UIViewController {
         buttonSpecification.layer.borderColor = UIColor.white.cgColor
         buttonSpecification.layer.borderWidth = 1.0
         
-        descriptionTextView.layer.cornerRadius = 10
-        
         reloadViews()
     }
     
@@ -125,7 +123,7 @@ extension ProductDetailsDescriptionViewController: UITableViewDataSource, UITabl
                                                 height: 60)))
         let label = UILabel.init(frame: (CGRect(x: 15, y: 0, width: view.frame.size.width-15, height: view.frame.size.height)))
         
-        label.font = UIFont.MuliSemiBold(15)
+        label.font = UIFont.MuliSemiBold(16)
         label.text = "General Specification"
         
         view.backgroundColor = UIColor.white

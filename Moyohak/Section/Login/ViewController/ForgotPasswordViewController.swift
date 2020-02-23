@@ -28,6 +28,10 @@ class ForgotPasswordViewController: SuperViewController {
         plotScreen()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
+    
     private func plotScreen() {
         viewMobileNumber.layer.cornerRadius = 8.0
         viewMobileNumber.dropShadow(color: UIColor.lightGray, offSet: CGSize(width: -1, height: 1))

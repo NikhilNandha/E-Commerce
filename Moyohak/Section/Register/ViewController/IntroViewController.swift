@@ -34,6 +34,10 @@ class IntroViewController: SuperViewController, PaginControl {
         plotScreen()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
+    
     //MARK: - UI Methods -
     
     private func plotScreen() {

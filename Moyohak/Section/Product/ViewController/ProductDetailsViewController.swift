@@ -42,6 +42,9 @@ class ProductDetailsViewController: SuperViewController {
         ProductViewModel.showRateProductScreen(navigationType: .Push, parentViewController: self)
     }
     
+    @IBAction func showCartPage(sender: UIButton) {
+        CartViewModel.showCartScreen(navigationType: .Push, parentViewController: self)
+    }
 }
 
 extension ProductDetailsViewController: UITableViewDelegate, UITableViewDataSource {

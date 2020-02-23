@@ -75,6 +75,23 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
         return 64
     }
     
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if section == ProfileViewModel.shared.dataArray[section].count-1 {
+            return 10
+        }else {
+            return 5
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 10
+        }else {
+            return 5
+        }
+        
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = ProfileViewModel.shared.dataArray[indexPath.section]
         showProfieScreenFor(Profile(rawValue: data[indexPath.row])!)

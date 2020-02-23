@@ -26,6 +26,9 @@ class RegistrationViewController: SuperViewController {
         plotScreen()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
 
     private func plotScreen() {
         viewEmail.layer.cornerRadius = 8.0

@@ -28,6 +28,9 @@ class OTPViewController: SuperViewController, UITextFieldDelegate {
         textfield1.becomeFirstResponder()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
     
     // MARK: - Textfield Methods -
     
